@@ -1,0 +1,43 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
+  "name": "COTA",
+  "description": "Cómo se usa COTA, la administración de la obra para arquitectos.",
+  "colors": {
+    "primary": "#B45309",
+    "light": "#F59E0B",
+    "dark": "#9A5306"
+  },
+  "fonts": {
+    "heading": {
+      "family": "Space Grotesk",
+      "weight": 700
+    }
+  },
+  "favicon": "/favicon.svg",
+  "logo": {
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg",
+    "href": "https://usacota.app"
+  },
+  "navbar": {
+    "primary": {
+      "type": "button",
+      "label": "Entrar a COTA",
+      "href": "https://admin.usacota.app"
+    }
+  },
+  "footer": {
+    "socials": {
+      "website": "https://usacota.app"
+    }
+  },
+  "navigation": {
+    "groups": [
+      {
+        "group": "Empezar",
+        "pages": ["index"]
+      }
+    ]
+  }
+}
