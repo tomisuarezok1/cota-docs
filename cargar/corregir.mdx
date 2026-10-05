@@ -1,0 +1,97 @@
+---
+title: "Corregir o anular"
+description: "¿Cómo corrijo o anulo algo que cargué?"
+icon: "rotate-left"
+---
+
+En COTA no se edita una carga: se corrige o se anula. Si recién guardaste, tocá **Deshacer** en el aviso de abajo. Si la carga tiene fecha de hoy, **Corregir** te abre Cargar con todo puesto. Si es de otro día, la anulás y la cargás de nuevo.
+
+<Frame><img src="/images/cargar/de-donde-salio.png" alt="Un movimiento abierto con ¿De dónde salió?, Corregir y Anular" style={{ maxWidth: "320px" }} /></Frame>
+
+## Qué usar en cada caso
+
+| Situación | Usá |
+|---|---|
+| Recién guardaste y te diste cuenta | **Deshacer**, en el aviso de abajo |
+| La carga tiene fecha de hoy | **Corregir** |
+| La carga es de otro día, o es una actualización | **Anular**, y la cargás de nuevo |
+
+## Deshacer, apenas guardás
+
+Cuando guardás, abajo aparece un aviso como «Gasto cargado · Obra Torres · \$ 850.000» con **Deshacer**. Dura unos 7 segundos; si pasás el mouse por encima, se queda quieto.
+
+Al tocarlo dice **Deshaciendo…** y después «Listo: lo deshiciste.». Deshacer es lo mismo que anular: la carga queda anulada, con las mismas reglas.
+
+<Note>
+**Actualizar todo por índice** no tiene **Deshacer**: cada línea se anula por separado.
+</Note>
+
+## Dónde están Corregir y Anular
+
+Están adentro de cada carga, en **¿De dónde salió?**:
+
+- **En una obra:** pestaña **Lo que pasó**. Tocá **¿De dónde salió?** en la carga que querés cambiar. Mirá [leer una obra](/obras/la-obra).
+- **En el estudio:** en **Mi estudio**, en **Lo que pasó en el estudio** (o en **Ver todo ›** si es más vieja). Mirá [tu plata](/estudio/tu-plata).
+
+**¿De dónde salió?** también te cuenta quién la cargó y cuándo («Cargado el 5/10 por Lucía.»), y si COTA avisó algo en ese momento.
+
+## Corregir una carga de hoy
+
+**Corregir** solo aparece en lo que tiene fecha de hoy. Cuenta la fecha de lo que pasó, no el día en que lo cargaste: si hoy cargaste algo con fecha de ayer, ya no se corrige, se anula.
+
+<Steps>
+  <Step title="Abrí la carga">
+    En **Lo que pasó**, tocá **¿De dónde salió?** y después **Corregir**.
+  </Step>
+  <Step title="Cambiá lo que estaba mal">
+    Se abre **Corregir una carga** con todo puesto: el tipo, el monto, la moneda, el cambio, la fecha, el concepto, la aclaración, el comprobante, el rubro y a quién. Arriba dice: «Estás corrigiendo una carga de hoy. Al guardar, la original se anula y queda la nueva.»
+  </Step>
+  <Step title="Guardá">
+    Ves «Corrección guardada · Obra Torres · \$ 850.000». La carga nueva dice en la historia «Corregido el 5/10: era \$ 580.000.»
+  </Step>
+</Steps>
+
+Lo que tenés que saber:
+
+- Podés cambiar el tipo (por ejemplo, de **Gasté** a **Pagué**), pero no la obra. Si la cargaste en otra obra, anulala y cargala en la que va.
+- En un contrato, **¿A quién contrataste?** llega vacío: escribí de nuevo el nombre.
+- Las actualizaciones no se corrigen: se anulan y se cargan de nuevo.
+- Una corrección no trae **Deshacer**: la original ya quedó anulada.
+
+## Anular
+
+<Steps>
+  <Step title="Tocá Anular">
+    En **¿De dónde salió?**, tocá **Anular**. COTA te pregunta: «¿Seguro? Se asienta con la fecha del original.»
+  </Step>
+  <Step title="Tocá Confirmar">
+    La carga queda anulada.
+  </Step>
+</Steps>
+
+Qué pasa cuando anulás:
+
+- La anulación lleva la **fecha de la carga original**, así no te cambia un mes que ya cerraste. En **¿De dónde salió?** queda dicho: «Se anuló el 5/10 por Lucía con fecha 2/10 (la del original, para no mover un mes ya cerrado).»
+- La carga no se borra: queda tachada y apagada, con «anulado por Lucía el 5/10» en rojo. Así cualquiera ve qué pasó.
+- El resto del equipo lo ve en **Actividad**, por ejemplo «Lucía anuló un gasto». Mirá [actividad y lo que viene](/hoy/actividad).
+- Si anulás **Sacaste un rubro**, el rubro vuelve a la obra.
+
+Después de anular, cargá lo correcto desde **Cargar**.
+
+## Quién puede corregir o anular
+
+No solo quien lo cargó: puede quien tiene permiso para cargar ese tipo de cosa en ese lugar. Por ejemplo, alguien con **Cargar gastos, pagos y contrataciones** puede anular cualquier gasto, pago o contrato de sus obras. Los retiros los anula solo un administrador. Mirá [qué ve cada uno](/tu-estudio/permisos).
+
+## Dudas frecuentes
+
+<Accordion title="¿Por qué no puedo editar una carga?">
+  Porque cada número de COTA sale de lo que cargaste. Si una carga se pudiera cambiar sin dejar rastro, los números de un mes ya cerrado podrían moverse sin que nadie se entere. Con Corregir y Anular siempre queda a la vista qué se cambió, cuándo y quién.
+</Accordion>
+
+<Accordion title="Dice «El movimiento ya está anulado.»">
+  Alguien ya la anuló, o la deshiciste antes. Fijate en **Lo que pasó**: la vas a ver tachada.
+</Accordion>
+
+<Accordion title="No me aparece Corregir">
+  La carga no tiene fecha de hoy, o ya está anulada. Usá **Anular** y cargala de nuevo. Si tampoco ves **Anular**, no tenés permiso para cargar ese tipo de cosa.
+</Accordion>

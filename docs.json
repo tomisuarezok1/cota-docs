@@ -33,10 +33,79 @@
     }
   },
   "navigation": {
-    "groups": [
+    "languages": [
       {
-        "group": "Empezar",
-        "pages": ["index"]
+        "language": "es",
+        "groups": [
+          {
+            "group": "Empezar",
+            "pages": [
+              "index",
+              "empezar/primera-obra",
+              "empezar/desde-el-excel",
+              "empezar/activar",
+              "empezar/entrar",
+              "empezar/instalar"
+            ]
+          },
+          {
+            "group": "Cargar",
+            "pages": [
+              "cargar/que-cargo",
+              "cargar/como-cargar",
+              "cargar/contrato",
+              "cargar/gasto-y-pago",
+              "cargar/cobro",
+              "cargar/actualizaciones",
+              "cargar/dolares",
+              "cargar/corregir",
+              "cargar/estudio"
+            ]
+          },
+          {
+            "group": "Hoy",
+            "pages": [
+              "hoy/para-hacer",
+              "hoy/actividad"
+            ]
+          },
+          {
+            "group": "Obras",
+            "pages": [
+              "obras/tus-obras",
+              "obras/la-obra",
+              "obras/historia",
+              "obras/estado-y-fechas",
+              "obras/compartir",
+              "obras/contador"
+            ]
+          },
+          {
+            "group": "Mi estudio",
+            "pages": [
+              "estudio/tu-plata",
+              "estudio/lo-que-ganaste",
+              "estudio/proveedores"
+            ]
+          },
+          {
+            "group": "Avisos",
+            "pages": [
+              "avisos/que-te-avisa",
+              "avisos/notificaciones"
+            ]
+          },
+          {
+            "group": "Tu estudio",
+            "pages": [
+              "tu-estudio/equipo",
+              "tu-estudio/permisos",
+              "tu-estudio/dolar",
+              "tu-estudio/plan",
+              "tu-estudio/cuenta"
+            ]
+          }
+        ]
       }
     ]
   }

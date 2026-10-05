@@ -1,0 +1,169 @@
+---
+title: "Cambió un precio"
+description: "¿Qué hago si cambió un precio o el contrato con el cliente?"
+icon: "arrow-trend-up"
+---
+
+Cuando cambia lo pactado a mitad de obra, cargás **Actualicé**. Sirve para tres cosas: un contratista o un rubro sube o baja, el contrato con el cliente se renegocia, o un rubro ya no se hace. No mueve plata: cambia lo contratado. Antes de guardar, COTA te muestra cómo queda tu ganancia y lo que debés o te deben.
+
+<Frame><img src="/images/cargar/menu-actualice.png" alt="El menú ¿Qué actualizaste? con Un rubro, El contrato con el cliente, Sacaste un rubro y Todo por índice" style={{ maxWidth: "320px" }} /></Frame>
+
+## Qué elegir
+
+Tocá **Cargar**, elegí la obra y tocá **Actualicé**. Aparece **¿Qué actualizaste?**:
+
+| Opción | Cuándo |
+|---|---|
+| **Un rubro** | «Subió o bajó lo que pactaste con alguien»: el contratista te subió el precio, o un rubro va a costar más o menos. |
+| **El contrato con el cliente** | «Lo que te paga por la obra»: renegociaste el total con el cliente. |
+| **Sacaste un rubro** | «Ya no se hace en esta obra». |
+| **Todo por índice** | «La obra entera de una vez»: aplicás un porcentaje, como el del índice CAC, a todos los rubros y al contrato. |
+
+En la pantalla **Cargar**, las mismas opciones aparecen como **Un rubro o contratista**, **El contrato con el cliente** y **Un rubro se saca de la obra**.
+
+## Un rubro o un contratista
+
+<Steps>
+  <Step title="Elegí el rubro">
+    En **Rubro**, el que cambió. Por ejemplo, Albañilería en Obra Torres.
+  </Step>
+  <Step title="Decí con quién">
+    Si la obra tiene contratistas, aparece **¿Con quién?**. Cada uno dice cuánto le debés, por ejemplo «Cuadrilla Gómez · le debés …». Si COTA sabe quién hace ese rubro, ya viene elegido. Si el rubro son compras y no hay un contratista, elegí **Son compras, sin contratista**.
+  </Step>
+  <Step title="Decí a cuánto queda">
+    En **¿A cuánto queda? · en pesos** elegí **Nuevo total** y escribí el monto, o **+ %** y tocá **+5 %**, **+10 %**, **+15 %** u **Otro…**. En **Otro…** podés poner decimales con coma, o un número negativo para bajar («+7,5 o -3»). Debajo te recuerda de cuánto parte: «Hoy Albañilería está contratado en \$ 16.000.000.»
+  </Step>
+  <Step title="Leé el eco y guardá">
+    Antes de guardar, COTA te dice qué va a pasar. Si querés, poné un **Concepto** (es opcional), por ejemplo «Índice CAC agosto». Tocá **Guardar**.
+  </Step>
+</Steps>
+
+Por ejemplo, con **+10 %** el eco dice: «Albañilería queda en \$ 17.600.000 (+10 %). Tu ganancia baja de \$ 12.000.000 a \$ 10.400.000. Le vas a deber \$ 1.600.000 más a Cuadrilla Gómez.»
+
+Si el contrato con el cliente no cambia, lo que sube un rubro sale de tu ganancia. Si eso te pasa, fijate si corresponde actualizar también el contrato.
+
+## El contrato con el cliente
+
+<Steps>
+  <Step title="Elegí El contrato con el cliente">
+    Debajo te dice cuánto es hoy: «Hoy el contrato es \$ 128.000.000.»
+  </Step>
+  <Step title="Decí a cuánto queda">
+    **Nuevo total** o **+ %**, igual que en un rubro.
+  </Step>
+  <Step title="Leé el eco y guardá">
+    Por ejemplo: «El contrato queda en \$ 140.800.000 (+10 %). Tu ganancia sube de \$ 12.000.000 a \$ 24.800.000. Familia Torres te va a deber \$ 12.800.000 más.»
+  </Step>
+</Steps>
+
+Para actualizar el contrato hace falta que la obra tenga cliente y que veas todos los números de la obra.
+
+<Tip>
+Si el cambio del contrato viene de un rubro que también cambió, actualizá ese rubro aparte con **Un rubro**.
+</Tip>
+
+## Sacaste un rubro
+
+Cuando un rubro ya no se hace en la obra, lo sacás. Lo que ya gastaste ahí queda como costo; lo que no vas a gastar pasa a tu ganancia.
+
+<Steps>
+  <Step title="Elegí el rubro que se saca">
+    En **Rubro que se saca**. No te pide un monto.
+  </Step>
+  <Step title="Decí qué pasa con lo que le debés">
+    Si todavía le debés algo a quien hacía el rubro, aparece «Le debés … a Carpintería Olmos» con dos opciones:
+    - **Ya está hecho y se paga** (viene elegida): lo que hizo se lo seguís debiendo.
+    - **Se cancela, no se hace**: esa deuda se cancela.
+  </Step>
+  <Step title="Leé el eco y guardá">
+    COTA te dice, por ejemplo: «Carpintería sale de la obra.», «Ya gastaste …: queda como costo.» y «Los … que no vas a gastar pasan a tu ganancia: de … a ….»
+  </Step>
+</Steps>
+
+Siempre termina con un recordatorio: «Si Familia Torres va a pagar menos por esto, cargalo aparte como una baja del contrato.» Eso se hace con **El contrato con el cliente**, poniendo un total más bajo.
+
+<Tip>
+COTA nunca te borra una deuda si no se lo decís: por eso **Ya está hecho y se paga** viene elegida.
+</Tip>
+
+## Si COTA no te deja guardar
+
+Antes de guardar, COTA revisa que la actualización tenga sentido. Si algo no cierra, te lo dice en rojo:
+
+| Si dice… | Qué pasa y qué hacer |
+|---|---|
+| «Queda igual que antes: no hay nada que actualizar.» | El total que pusiste es el mismo que ya tenía. Revisá el número. |
+| «No puede quedar por debajo de lo gastado. Si el rubro se saca de la obra, elegí «Un rubro se saca de la obra».» | Querés bajar el rubro a menos de lo que ya lleva. Si no se hace más, sacalo en vez de bajarlo. |
+| «Ese rubro ya gastó todo lo contratado: no hay nada que sacar.» | Al sacar el rubro no queda nada sin gastar. |
+| «El contrato no puede quedar por debajo de cero.» | La baja del contrato es más grande que el contrato. |
+| «A quien lo hace no se le contrató tanto: bajalo sin contratista, o hasta \$ … menos.» | Estás bajando más de lo que le contrataste a esa persona. Bajalo menos, o elegí **Son compras, sin contratista**. |
+| «Necesitás ver todos los números para actualizar el contrato.» | Tu usuario ve **Solo los costos**. Pedíselo a un administrador. |
+
+## Al guardar
+
+Ves «Actualización cargada · Obra Torres», con **Deshacer**, y volvés a la obra. En **Lo que pasó** queda la actualización con el de cuánto a cuánto y el efecto en tu ganancia.
+
+Si con la actualización lo contratado pasa a ser más que lo pactado con el cliente, COTA te avisa: «Obra Torres te queda en pérdida: …».
+
+## Actualizar todo por índice
+
+Para aplicar un mismo porcentaje a toda la obra de una vez: a los rubros, al contrato con el cliente, o a los dos.
+
+<Frame><img src="/images/cargar/indice.png" alt="Actualizar todo por índice con la vista previa de lo que va a pasar" style={{ maxWidth: "320px" }} /></Frame>
+
+<Steps>
+  <Step title="Abrí Actualizar todo por índice">
+    Desde **Cargar** → la obra → **Actualicé** → **Todo por índice**. O desde el menú ⋯ de la obra → **Actualizar todo por índice**.
+  </Step>
+  <Step title="Poné el porcentaje">
+    En **¿Cuánto cambió?** → **Porcentaje**, por ejemplo 10. Para bajar, un número negativo (por ejemplo −5).
+  </Step>
+  <Step title="Elegí qué se actualiza">
+    En **Se actualizan**: los rubros con monto contratado, el contrato con el cliente, o los dos. Si la obra no tiene cliente, el contrato no se puede elegir.
+  </Step>
+  <Step title="Tocá Previsualizar">
+    No guarda nada. Abajo aparece **Lo que va a pasar**: una línea por rubro con de cuánto a cuánto queda y cuánto suma o resta en tu ganancia, y al final **Tu ganancia** antes y después.
+  </Step>
+  <Step title="Aplicá">
+    Poné la **Fecha** (viene hoy) y, si querés, un **Concepto** como «CAC agosto». Tocá **Aplicar +10 %**. Mientras trabaja dice **Aplicando…**.
+  </Step>
+</Steps>
+
+Si un rubro no puede bajar tanto porque ya gastó más de lo que quedaría, no se actualiza y COTA te dice cuál. Lo mismo con el contrato si quedaría por debajo de cero.
+
+<Warning>
+Todo por índice no tiene **Deshacer**. Cada rubro y el contrato quedan como una actualización aparte en **Lo que pasó**, y si te equivocaste los anulás de a uno. Mirá [corregir o anular](/cargar/corregir).
+</Warning>
+
+Para usar **Todo por índice** necesitás los dos permisos: **Actualizar rubros** y **Actualizar el contrato con el cliente**.
+
+## Otras formas de llegar
+
+- En la obra, pestaña **Lo contratado**: tocá un rubro y después **¿Cambió lo contratado? →**. Abre **Actualicé** con ese rubro ya elegido.
+- En el menú ⋯ de la obra: **Actualizar el contrato** y **Actualizar todo por índice**.
+- En la historia de la obra: **¿Se actualizó el contrato? →**. Mirá [la historia de la obra](/obras/historia).
+- En **Para hacer** y en los avisos de COTA: **Actualizar el rubro** y **Actualizar el contrato**. Mirá [para hacer](/hoy/para-hacer).
+
+## Quién puede
+
+| Para | Hace falta |
+|---|---|
+| Un rubro o sacar un rubro | **Actualizar rubros** |
+| El contrato con el cliente | **Actualizar el contrato con el cliente** (pide ver **Todo**) |
+| Todo por índice | Los dos |
+
+Mirá [qué ve cada uno](/tu-estudio/permisos).
+
+## Dudas frecuentes
+
+<Accordion title="¿Actualicé se carga en dólares?">
+  No: **Actualicé** es siempre en pesos, también en una obra con contrato en dólares. Por eso dice **¿A cuánto queda? · en pesos**.
+</Accordion>
+
+<Accordion title="Me equivoqué en una actualización">
+  Las actualizaciones no se corrigen: se anulan y se cargan de nuevo. Si recién la guardaste, tocá **Deshacer** en el aviso de abajo. Si sacaste un rubro por error, al anularlo el rubro vuelve a la obra. Mirá [corregir o anular](/cargar/corregir).
+</Accordion>
+
+<Accordion title="El contratista me cobró más, pero ya lo pagué">
+  Cargá primero **Actualicé** → **Un rubro**, con ese contratista en **¿Con quién?**: le vas a deber la diferencia. Después cargá el **Pagué** por lo que le pagaste.
+</Accordion>

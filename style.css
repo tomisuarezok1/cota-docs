@@ -1,0 +1,7 @@
+/* La doc es solo en castellano: la navegación se declara como idioma «es» para
+   que Mintlify traduzca su interfaz («Buscar…», «En esta página»), pero el
+   selector de idioma, con una sola opción, no tiene nada que elegir. */
+#localization-select-trigger,
+[data-component-part="localization-select-trigger"] {
+  display: none !important;
+}
