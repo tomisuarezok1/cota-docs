@@ -18,7 +18,7 @@ Subís la planilla que ya usás y COTA la lee en uno a tres minutos. Después te
     Tocá **Elegir la planilla →**. Sirven archivos .xlsx, .xls o .csv, de hasta 4 MB cada uno. Podés elegir varios archivos a la vez si la obra está repartida en más de una planilla.
   </Step>
   <Step title="Contale de la planilla, si querés">
-    En **Contame de la planilla (opcional)** podés escribir hasta 600 caracteres. Por ejemplo: «La hoja Obra es la que vale. Los precios de pinturería están en dólares. Lo de la pérgola es estimado, todavía no se contrató.» Le sirve a COTA para elegir la hoja y la moneda. Cada número lo verifica igual desde tus celdas.
+    En **Contame de la planilla (opcional)** podés escribir hasta 600 caracteres. Por ejemplo: «La hoja Obra es la que vale. Los precios de pinturería están en dólares. Lo de la pérgola es estimado, todavía no se contrató.» Si nombrás una hoja, COTA lee solo esa y, si falta un dato, te pregunta. El resto, como la moneda o qué es estimado, son pistas. Cada número lo verifica igual desde tus celdas.
   </Step>
   <Step title="Tocá Leer mi planilla →">
     COTA empieza a leer. Suele tardar entre 1 y 3 minutos.
@@ -39,6 +39,18 @@ Si tarda más de lo normal vas a ver «Está tardando más de lo habitual. Sigue
 <Tip>
 La lectura sigue aunque cierres la pestaña. Igual, lo más simple es dejarla abierta: la pantalla se actualiza sola y, cuando termina, te muestra lo que leyó.
 </Tip>
+
+## Si le indicás una hoja
+
+Si en **Contame de la planilla (opcional)** nombrás una hoja que está en el archivo, COTA lee solo esa. Por ejemplo: «Tomá la pestaña «Obra».» o «La hoja «Obra» es la que vale.»
+
+Si en esa hoja falta un dato, te lo pregunta. No lo busca en otra. Por ejemplo: «En la hoja «Obra» no encontré lo pactado con el cliente. ¿Cuánto es?». Si el presupuesto figura en otra hoja, te dice: «El presupuesto figura en la hoja «Presupuesto». Me pediste leer solo «Obra», así que no la abrí. ¿Cuál es el presupuesto?». Con los cobros es igual, y te pregunta «¿Cuánto cobraste?».
+
+Una segunda hoja entra solo si la nombrás, por ejemplo «También leé la hoja Extras». «No uses la hoja Resumen» o «salvo Notas» la dejan afuera.
+
+Si el nombre no está en la planilla, COTA no lee el libro entero y te avisa: «No encontré la hoja «Obra». En la planilla están: «Presupuesto», «Cobros».». Si el nombre coincide con más de una hoja: ««Obra» coincide con más de una hoja («Obra 1», «Obra 2»). Decime cuál.». Esos textos aparecen como motivo en [Si no la pudo leer](#si-no-la-pudo-leer).
+
+Si no nombrás ninguna hoja, COTA lee el libro entero, como antes.
 
 ## Si tu planilla tiene varias obras
 
@@ -129,4 +141,4 @@ Si sos parte del equipo, para traer una obra desde un Excel necesitás el permis
 
 ## Tus datos
 
-COTA lee tu planilla con inteligencia artificial: la planilla entera se manda a Anthropic (los modelos Claude) para leerla, y Anthropic no la usa para entrenar sus modelos. La planilla queda guardada de forma privada en COTA, para poder revisar la lectura si algo salió distinto de lo que esperabas. Todo el detalle está en [Cómo cuidamos tus datos](https://admin.usacota.app/privacidad).
+COTA lee tu planilla con inteligencia artificial: se manda la planilla entera a Anthropic (los modelos Claude) para leerla, salvo que indiques una hoja: en ese caso se manda solo esa. Anthropic no la usa para entrenar sus modelos. La planilla queda guardada de forma privada en COTA, para poder revisar la lectura si algo salió distinto de lo que esperabas. Todo el detalle está en [Cómo cuidamos tus datos](https://admin.usacota.app/privacidad).
