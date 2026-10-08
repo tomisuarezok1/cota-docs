@@ -9,6 +9,16 @@ Lo nuevo y lo que arreglamos en COTA, lo más reciente primero.
 Cada entrada lleva la fecha y una sola etiqueta: «Nuevo» si antes no estaba, «Mejora» si algo que ya usabas quedó mejor, o «Bug corregido» si algo andaba mal y lo arreglamos.
 
 <Update label="8 de octubre de 2026" tags={["Bug corregido"]}>
+  ## COTA lee solo la hoja que le indicás
+
+  Si en **Contame de la planilla (opcional)** nombrás una hoja que está en el archivo, COTA lee solo esa. Antes ese texto era una pista y a veces tomaba un número de otra pestaña. Si en la hoja falta un dato, te lo pregunta.
+
+  Una segunda hoja entra solo si la nombrás. Si no nombrás ninguna, COTA sigue leyendo el libro entero.
+
+  Cómo funciona: [Desde tu Excel](/empezar/desde-el-excel#si-le-indicas-una-hoja).
+</Update>
+
+<Update label="8 de octubre de 2026" tags={["Bug corregido"]}>
   ## Ahora podés volver al número de tu Excel
 
   Cuando COTA te pregunta por un monto al revisar tu planilla, elegir una opción ya no cambia el número de una. Primero ves cómo quedaría, por ejemplo «El gastado queda en \$ 800.000. El Excel decía \$ 1.200.000.», y recién cambia cuando tocás **Usar este**.
