@@ -104,6 +104,12 @@
               "tu-estudio/plan",
               "tu-estudio/cuenta"
             ]
+          },
+          {
+            "group": "Novedades",
+            "pages": [
+              "novedades"
+            ]
           }
         ]
       }
