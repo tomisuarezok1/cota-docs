@@ -10,7 +10,7 @@ Entrá a **Obras**. Tus obras aparecen agrupadas por cómo vienen: primero las q
 
 ## Las secciones
 
-Arriba del título, COTA te dice cuántas obras tenés en curso (cuenta también las paradas, porque siguen abiertas).
+Arriba del título, COTA te dice cuántas obras tenés en curso (cuenta también las paradas, porque siguen abiertas). Si no hay ninguna en curso y sí hay presupuestos, dice cuántos hay, por ejemplo «2 presupuestos».
 
 Si hay una planilla a medias, arriba de estas secciones aparece **Importando**. La ven quienes pueden importar desde Excel. Tocá la fila para seguirla. Si no hay ninguna, no aparece. El detalle está en [Mientras se importa](/empezar/desde-el-excel#mientras-se-importa).
 
@@ -25,6 +25,8 @@ Debajo van tus obras abiertas, en este orden:
 | **Paradas** | Las que marcaste como paradas, vengan como vengan sus números. |
 
 Si una sección no tiene obras, no aparece. Adentro de cada una, primero va la que más se pasó en plata, después la que usó más %, y después por nombre.
+
+Después de esas secciones, y antes de **Completadas**, va **Presupuestos**: las obras que todavía no arrancaron. Si no tenés ninguna, el grupo no aparece. El detalle está en [Presupuestos](#presupuestos).
 
 Al pie está **Completadas**, plegado, con la cantidad al lado. Tocalo para ver las obras que ya terminaste. Para pasar una obra a **Paradas** o a **Completadas**, mirá [Estado y fechas](/obras/estado-y-fechas).
 
@@ -74,13 +76,27 @@ Por ejemplo, Casa López puede ir al 60 % de lo contratado (verde) y estar en **
 
 Para ver qué rubro fue, entrá a la obra y abrí la pestaña **Lo contratado**: en el grupo **Se pasaron** está cuál y por cuánto. Más en [Leer una obra](/obras/la-obra).
 
+## Presupuestos
+
+Un presupuesto es una obra que todavía no arrancó. Vive en este grupo y se ordena del más nuevo al más viejo. Tocá la fila y se abre el editor. La página de la obra se abre cuando arranca. Cómo armarlo, en [Un presupuesto](/obras/presupuesto).
+
+{/* Captura pendiente: /images/obras/presupuestos.png — Obras con el grupo Presupuestos, el cliente, el estado y el precio. */}
+
+Cada fila muestra:
+
+- **A la izquierda, un documento.**
+- **En el medio, el nombre.** Al lado, el estado: **Borrador**, **Enviado** o **Visto**. Si ya pasó el día hasta el que vale, también dice **Vencido**. Debajo, el cliente y la fecha: «Familia Pereyra · hasta 26 oct». Si venció, «Familia Pereyra · venció el 26 oct».
+- **A la derecha, el precio.** Si todavía no hay número, ves «—».
+
+Si llegás a Obras mirando solo un color del semáforo (arriba dice, por ejemplo, «3 en curso en verde», «2 en curso por llegar al límite» o «1 en curso que se pasó»), este grupo queda afuera. Tocá **ver todas** para volver a verlo. La búsqueda sí lo encuentra.
+
 ## El buscador
 
-Cuando tenés 4 obras o más, arriba aparece **Buscar obra o cliente**. Busca en el nombre de la obra, en el cliente y en el domicilio, sin importar acentos ni mayúsculas. Arriba te dice cuántas encontró («2 de 5 obras»); para volver a la lista entera, tocá **ver todas**.
+Cuando obras y presupuestos, juntos, son 4 o más, arriba aparece **Buscar obra o cliente**. Busca en el nombre y en el cliente, sin importar acentos ni mayúsculas. En las obras que ya arrancaron, también busca en el domicilio. Arriba te dice cuántas obras encontró («2 de 5 obras»); si la búsqueda solo toca presupuestos, dice cuántos son («2 presupuestos»). Para volver a la lista entera, tocá **ver todas**.
 
 ## El Resumen
 
-En la compu está al costado de la lista; en el celular, abajo. Suma todas tus obras, aunque estés buscando:
+En la compu está al costado de la lista; en el celular, abajo. Suma las obras que ya arrancaron, aunque estés buscando. Un presupuesto queda afuera de estos números: todavía no tiene contrato.
 
 | Número | Qué es |
 |---|---|
@@ -98,7 +114,9 @@ Si en tu estudio ves **Solo los costos**, el Resumen no muestra **Te falta cobra
 
 En esta pantalla no hay botón para crear. Tocá **Cargar** y elegí **Una obra nueva**: ahí decidís si la traés **Desde tu Excel** o la cargás **A mano**. Te lo contamos paso a paso en [Cargar una obra](/empezar/primera-obra).
 
-Si todavía no tenés ninguna, la pantalla dice «Todavía no hay obras cargadas.» y te muestra el botón para empezar.
+Si la obra todavía no arrancó, en el mismo menú elegí **Un presupuesto**. Cómo se arma, en [Un presupuesto](/obras/presupuesto).
+
+Si todavía no tenés ninguna obra ni ningún presupuesto, la pantalla dice «Todavía no hay obras cargadas.» y te muestra el botón para empezar. Debajo, si podés crear obras, dice «Si todavía no arrancó, armá un presupuesto.»
 
 ## Dudas frecuentes
 
@@ -108,6 +126,10 @@ Si sos colaborador, ves solo las obras que te asignaron, o todas si te dieron «
 
 <Accordion title="¿Dónde están las obras que ya terminé?">
 Abajo de todo, en **Completadas**. Tocalo para desplegarlas. Si buscás algo y aparece una completada, se despliega solo.
+</Accordion>
+
+<Accordion title="¿Dónde están los presupuestos?">
+En el grupo **Presupuestos**, después de las obras en curso y antes de **Completadas**. Cada uno es una obra que todavía no arrancó. Mirá [Un presupuesto](/obras/presupuesto).
 </Accordion>
 
 <Accordion title="Tengo una obra pasada que figura en Paradas">
