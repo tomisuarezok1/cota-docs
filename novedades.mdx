@@ -9,6 +9,16 @@ Lo nuevo y lo que arreglamos en COTA, lo más reciente primero.
 Cada entrada lleva la fecha y una sola etiqueta: «Nuevo» si antes no estaba, «Mejora» si algo que ya usabas quedó mejor, o «Bug corregido» si algo andaba mal y lo arreglamos.
 
 <Update label="13 de octubre de 2026" tags={["Mejora"]}>
+  ## Ves cuánto pesa cada rubro y anotá el proveedor
+
+  En el editor de un presupuesto, debajo de «Ve \$ …» cada rubro muestra una barra chica y cuánto pesa sobre el total, por ejemplo «66,67 % del total». Sale del precio que ve el cliente, no del costo, y no se guarda: se recalcula solo. Si la ganancia va metida en los rubros, los porcentajes suman 100 %. Si va como honorarios, lo que falta es esa línea.
+
+  Cada rubro tiene un campo **Proveedor**. Es una nota tuya: se guarda con el presupuesto y el cliente no la ve. Debajo dice «Solo para vos. No sale en el link.»
+
+  Cómo funciona: [Un presupuesto](/obras/presupuesto#cuánto-pesa-cada-rubro-y-el-proveedor).
+</Update>
+
+<Update label="13 de octubre de 2026" tags={["Mejora"]}>
   ## Una obra archivada ya no suma en los números del estudio
 
   Cuando archivás una obra, deja de contar en **Mi estudio**: **Tu caja hoy**, **Debés**, **Te falta cobrar** (y el «de N obras» baja en uno) y **Lo que ganaste**. También sale de lo que le debés a un proveedor, obra por obra.
