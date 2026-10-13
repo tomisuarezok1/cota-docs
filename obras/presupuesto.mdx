@@ -1,0 +1,101 @@
+---
+title: "Un presupuesto"
+description: "¿Cómo armo un presupuesto antes de que arranque la obra?"
+icon: "file-text"
+---
+
+Un presupuesto es una obra que todavía no arrancó. Lo armás con el precio para el cliente y, cuando dice que sí, esa misma obra empieza.
+
+## Un presupuesto es una obra sin arrancar
+
+En **Obras** aparece en el grupo **Presupuestos**, después de las obras en curso y antes de **Completadas**. Cada fila muestra el cliente, el estado (**Borrador**, **Enviado** o **Visto**), si venció, y el precio. El detalle de la fila está en [Tus obras](/obras/tus-obras#presupuestos).
+
+Lo creás desde el **+**, si podés crear obras, o lo abrís tocando la fila. Mientras sigue siendo un presupuesto, lo editás en esta pantalla. Los gastos, los cobros y el contrato se cargan el día que la obra arranca.
+
+## Cómo lo armás
+
+<Steps>
+  <Step title="Tocá el +">
+    En el celular está abajo, en el medio. En la compu, arriba en la barra de la izquierda.
+  </Step>
+  <Step title="Tocá Un presupuesto">
+    Debajo dice **Una obra que todavía no arrancó**. Se abre **Nuevo presupuesto**.
+  </Step>
+  <Step title="Completá la ficha">
+    **Obra** (por ejemplo, Casa del Bosque), **Cliente** (Familia Pereyra) y **Tipo**. El tipo es el mismo que al [cargar una obra a mano](/empezar/primera-obra#la-obra-y-la-moneda).
+  </Step>
+  <Step title="Tocá Crear presupuesto">
+    Queda guardado y seguís en el mismo editor, ahora con el nombre de la obra arriba. Para cambiar algo después, tocá **Guardar**. Cuando queda, dice «Quedó guardado.»
+  </Step>
+</Steps>
+
+{/* Captura pendiente: /images/obras/presupuesto-nuevo.png — editor vacío, Nuevo presupuesto. */}
+
+Arriba a la izquierda, **‹ Obras** vuelve a la lista. Para guardar hacen falta el nombre y el cliente. Si falta el nombre, COTA dice «Ponele nombre a la obra.» Si falta el cliente, «Decí quién es el cliente.»
+
+### Los rubros
+
+El título dice **Rubros**, y debajo: «Lo que a vos te cuesta. El precio de cada uno sale de la ganancia.»
+
+Cada rubro se elige de la lista, o **Otro rubro** y le ponés el nombre (el ejemplo del campo es Paisajismo). El botón **Otro rubro** suma uno más. La × lo saca.
+
+| Cómo | Qué ponés |
+|---|---|
+| **Un monto** | Un **Costo** solo: el total del rubro. |
+| **Por unidad** | Líneas con **Descripción**, **Cantidad**, **Unidad** (por ejemplo, m²) y **Costo**. El costo de la línea es la cantidad por ese costo. **Otra línea** suma una. |
+
+En cada rubro, **El cliente lo ve** viene tildado. Si lo destildás, ese rubro queda para vos. En un rubro por unidad que el cliente ve, elegís **Solo el monto** o **Con el detalle**.
+
+Debajo del rubro, COTA te dice qué ve el cliente: «Ve \$ 13.800.000» o «No lo ve el cliente».
+
+### Tu ganancia
+
+Es una sola. **Un porcentaje** (el campo **Porcentaje**, por ejemplo 15) o **Un monto**.
+
+Cómo la ve el cliente:
+
+- **Metida en cada rubro.** El precio de cada rubro ya la incluye.
+- **Como honorarios.** El cliente ve el costo de cada rubro, y la ganancia va aparte, en la línea **Honorarios**.
+
+### El precio
+
+Abajo del formulario, el resumen se actualiza solo:
+
+| Número | Qué es |
+|---|---|
+| **Costo** | Lo que te cuestan los rubros. |
+| **Ganancia** | La que cargaste. |
+| **Honorarios** | Aparece si elegiste **Como honorarios**. |
+| **Precio** | Lo que suma el cliente: los rubros con **El cliente lo ve** tildado y, si van aparte, los honorarios. |
+
+{/* Captura pendiente: /images/obras/presupuesto-armado.png — editor con rubros, ganancia y precio. */}
+
+### Hasta cuándo vale
+
+En **Para el cliente**, **Vale hasta** es el día. En la fila de **Obras** se lee «hasta 26 oct», o «venció el 26 oct» con la etiqueta **Vencido**.
+
+**Aclaraciones** es el texto que acompaña el precio. El ejemplo del campo: «No incluye el conexionado de gas.»
+
+En un presupuesto ya guardado, arriba del nombre ves el estado y la fecha, por ejemplo «Borrador · vale hasta el 26 oct».
+
+## Cuando el cliente dice que sí
+
+Esa parte aparece en el editor, después de crear el presupuesto, si podés crear obras. El título es **El cliente dijo que sí**.
+
+<Steps>
+  <Step title="Guardá">
+    Arranca con lo último que guardaste. Si cambiaste un número y todavía no tocaste **Guardar**, ese cambio queda afuera.
+  </Step>
+  <Step title="Tocá Arrancar la obra">
+    COTA pregunta: «¿Arranco la obra? El costo de cada rubro pasa a ser su presupuesto, con lo último que guardaste.»
+  </Step>
+  <Step title="Tocá Sí, arrancar">
+    El costo de cada rubro, lo que a vos te cuesta, queda como lo contratado de ese rubro. La ganancia queda en lo que pensabas ganar. La obra se abre en su página: desde ahí la leés y le cargás lo que pasa. Mirá [Leer una obra](/obras/la-obra).
+  </Step>
+</Steps>
+
+**Cancelar** cierra la pregunta. Mientras trabaja, el botón dice **Arrancando…**.
+
+El presupuesto se guarda con los rubros que tengas. Para arrancar hacen falta al menos 3 rubros con costo. Si hay menos, COTA lo dice en esa sección: «Para arrancar hacen falta al menos 3 rubros con costo (hay 1). Mientras es un presupuesto, podés dejarlo así.»
+
+Ahí también corre el límite del plan. Si el plan no está activo y ya hay una obra en curso, al confirmar dice «Para arrancar otra obra activá el plan.» Mirá [Activar COTA](/empezar/activar).
