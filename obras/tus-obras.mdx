@@ -10,7 +10,7 @@ Entrá a **Obras**. Tus obras aparecen agrupadas por cómo vienen: primero las q
 
 ## Las secciones
 
-Arriba del título, COTA te dice cuántas obras tenés en curso (cuenta también las paradas, porque siguen abiertas). Si no hay ninguna en curso y sí hay presupuestos, dice cuántos hay, por ejemplo «2 presupuestos».
+Arriba del título, COTA te dice cuántas obras tenés en curso (cuenta también las paradas, porque siguen abiertas). Si no hay ninguna en curso y sí hay presupuestos, dice cuántos hay, por ejemplo «2 presupuestos». Una archivada no cuenta: mirá [Archivar una obra](#archivar-una-obra).
 
 Si hay una planilla a medias, arriba de estas secciones aparece **Importando**. La ven quienes pueden importar desde Excel. Tocá la fila para seguirla. Si no hay ninguna, no aparece. El detalle está en [Mientras se importa](/empezar/desde-el-excel#mientras-se-importa).
 
@@ -118,6 +118,59 @@ Si la obra todavía no arrancó, en el mismo menú elegí **Un presupuesto**. C�
 
 Si todavía no tenés ninguna obra ni ningún presupuesto, la pantalla dice «Todavía no hay obras cargadas.» y te muestra el botón para empezar. Debajo, si podés crear obras, dice «Si todavía no arrancó, armá un presupuesto.»
 
+## Archivar una obra
+
+Archivar saca la obra de **Obras** y de Inicio. Inicio es la pantalla **Hoy**. No la para ni la completa: ese estado queda como estaba, y la podés restaurar. Para parar o completar, mirá [Estado y fechas](/obras/estado-y-fechas).
+
+{/* Captura: el menú ⋯ de la obra, con Archivar obra en rojo, al final y aparte. */}
+
+En el **⋯** de la obra, al final y aparte, está **Archivar obra**, en rojo. Lo ve quien puede archivar y restaurar obras. El administrador lo tiene por el rol. Si no lo tenés, no aparece. Más en [Qué ve cada uno](/tu-estudio/permisos).
+
+<Steps>
+  <Step title="Tocá Archivar obra">
+    Está al final del **⋯**, aparte de parar o completar.
+  </Step>
+  <Step title="Confirmá">
+    COTA pregunta «¿Archivás «Casa López»?» y dice: «Sale de Obras y de Inicio. Queda guardado quién lo hizo y la podés restaurar cuando quieras.» Tocá **Archivar obra**. Para volver atrás sin archivar, **Cancelar**.
+  </Step>
+  <Step title="Volvés a Obras">
+    El aviso dice «Casa López» archivada. Ya no está en Obras ni en Inicio. Al lado, **Deshacer**. Si lo tocás, la obra vuelve y el aviso pasa a «Casa López» volvió a Obras.
+  </Step>
+</Steps>
+
+{/* Captura: la confirmación ¿Archivás «Casa López»?, con Archivar obra y Cancelar. */}
+
+{/* Captura: el aviso «Casa López» archivada. Ya no está en Obras ni en Inicio., con Deshacer. */}
+
+No entra en el número de obras en curso, arriba del título, ni en las secciones de esta pantalla. Tampoco aparece en [Para hacer](/hoy/para-hacer) ni en Hoy: lo que tenía pendiente se cierra.
+
+En la pestaña **Lo que pasó** queda «Archivaste la obra».
+
+### Ver las obras archivadas
+
+Si podés archivar y hay alguna, debajo del título **Tus obras** aparece **Ver obras archivadas (N) →**. La N es cuántas hay. Si no hay ninguna, el link no está. Si no te queda ninguna en curso y sí hay archivadas, la pantalla dice «No tenés obras en curso.» y muestra el mismo link.
+
+{/* Captura: Obras, el link Ver obras archivadas (N) → debajo del título Tus obras. */}
+
+Ese link abre la pantalla **Obras archivadas**. Arriba dice: «No aparecen en Obras ni en Inicio. Al restaurar vuelven, con todo lo que tenían.» Cada obra muestra quién la archivó y cuándo, por ejemplo «Archivada el 12/10 · por Nombre», y el botón **Restaurar**.
+
+{/* Captura: la pantalla Obras archivadas, con «Archivada el 12/10 · por Nombre» y Restaurar. */}
+
+<Steps>
+  <Step title="Tocá Restaurar">
+    COTA pregunta «¿Restaurás «Casa López»?» y dice: «Vuelve a Obras y a Inicio, con todo lo que tenía.»
+  </Step>
+  <Step title="Tocá Restaurar obra">
+    Volvés a **Obras**. La obra queda en el estado en el que estaba: en curso, parada o completada. En **Lo que pasó** queda «Restauraste la obra».
+  </Step>
+</Steps>
+
+### El link de una obra archivada
+
+No se abre la ficha. La pantalla dice: «Esta obra está archivada. No aparece en Obras ni en Inicio.» Si podés restaurarla, también está **Ver las obras archivadas →**. Restaurar se hace desde la lista.
+
+{/* Captura: «Esta obra está archivada. No aparece en Obras ni en Inicio.», sin menú. */}
+
 ## Dudas frecuentes
 
 <Accordion title="No veo todas las obras del estudio">
@@ -130,6 +183,10 @@ Abajo de todo, en **Completadas**. Tocalo para desplegarlas. Si buscás algo y a
 
 <Accordion title="¿Dónde están los presupuestos?">
 En el grupo **Presupuestos**, después de las obras en curso y antes de **Completadas**. Cada uno es una obra que todavía no arrancó. Mirá [Un presupuesto](/obras/presupuesto).
+</Accordion>
+
+<Accordion title="No veo Archivar obra">
+Lo ve quien puede archivar y restaurar obras. El administrador lo tiene por el rol. Si sos colaborador, no aparece en el **⋯**. Más en [Qué ve cada uno](/tu-estudio/permisos).
 </Accordion>
 
 <Accordion title="Tengo una obra pasada que figura en Paradas">
