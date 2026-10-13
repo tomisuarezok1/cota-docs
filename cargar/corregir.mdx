@@ -4,7 +4,7 @@ description: "¿Cómo corrijo o anulo algo que cargué?"
 icon: "rotate-left"
 ---
 
-En COTA no se edita una carga: se corrige o se anula. Si recién guardaste, tocá **Deshacer** en el aviso de abajo. Si la carga tiene fecha de hoy, **Corregir** te abre Cargar con todo puesto. Si es de otro día, la anulás y la cargás de nuevo.
+En COTA no se edita una carga: se corrige o se anula. Si recién guardaste, tocá **Deshacer** en el aviso de abajo. Si la carga tiene fecha de hoy, **Corregir** te abre Cargar con todo puesto. Si es de otro día, la anulás y la cargás de nuevo. Si lo que quedó mal es lo pactado o lo cobrado al cargar la obra, eso se arregla aparte: [Corregir la carga inicial de una obra](#corregir-la-carga-inicial-de-una-obra).
 
 <Frame><img src="/images/cargar/de-donde-salio.png" alt="Un movimiento abierto con ¿De dónde salió?, Corregir y Anular" style={{ maxWidth: "320px" }} /></Frame>
 
@@ -15,6 +15,7 @@ En COTA no se edita una carga: se corrige o se anula. Si recién guardaste, toc�
 | Recién guardaste y te diste cuenta | **Deshacer**, en el aviso de abajo |
 | La carga tiene fecha de hoy | **Corregir** |
 | La carga es de otro día, o es una actualización | **Anular**, y la cargás de nuevo |
+| Lo pactado o lo cobrado al cargar la obra | **Corregir la carga inicial**, en el **⋯** de la obra |
 
 ## Deshacer, apenas guardás
 
@@ -82,6 +83,39 @@ Después de anular, cargá lo correcto desde **Cargar**.
 Cuando una carga quedó corregida dejando rastro, en **Lo que pasó** de la obra se ve quién la corrigió, cuándo, y **Ver qué cambió**. Esa carga no se tacha y el monto sigue igual. **Anular**, y **Corregir** en una carga de hoy, siguen como están: la original queda anulada. Mirá [Cuando alguien corrigió una carga](/obras/la-obra#cuando-alguien-corrigió-una-carga).
 </Note>
 
+## Corregir la carga inicial de una obra
+
+Usala cuando quedó mal un número de la carga inicial: lo que habías pactado con el cliente, o lo que ya habías cobrado al cargar la obra. No es un cambio de precio. Si renegociaste con el cliente, eso se carga con [Actualizar el contrato](/cargar/actualizaciones#el-contrato-con-el-cliente).
+
+Está en el menú **⋯** de la obra, justo después de **Actualizar el contrato**. La ve quien puede actualizar el contrato. Si la obra nació como presupuesto, no aparece.
+
+{/* Captura: el menú ⋯ de la obra, con Corregir la carga inicial justo después de Actualizar el contrato. */}
+
+<Steps>
+  <Step title="Abrí la hoja">
+    En la obra, tocá **⋯** y después **Corregir la carga inicial**. Arriba dice el nombre de la obra, y el título es **Corregir la carga inicial**. La hoja aclara: «Para arreglar un número mal cargado. Lo original queda guardado en la historia.»
+  </Step>
+  <Step title="Corregí los dos números">
+    Hay dos campos. **Pactado con el cliente** es lo de la carga inicial, no el contrato de ahora. **Ya cobrado al cargar la obra** es lo cobrado al cargarla, no lo que cobraste después. Los dos arrancan en lo que vale hoy esa carga. Debajo de cada uno dice **Estaba cargado**, con ese número, incluidas las correcciones anteriores.
+  </Step>
+  <Step title="Mirá cómo queda">
+    Mientras escribís, **Cómo queda** muestra la **Ganancia esperada** y **Falta cobrar**. Si un total cambia, el de antes queda tachado y el nuevo aparece al lado. Un cobro de después, o un **Actualizar el contrato**, no se reescriben.
+  </Step>
+  <Step title="Guardá la corrección">
+    **Guardar corrección** se prende solo si cambiaste algo. Si volvés a los números de **Estaba cargado**, se apaga. Al guardar, lo original queda guardado: no se pisa. **Cancelar** cierra la hoja sin cambiar nada.
+  </Step>
+</Steps>
+
+{/* Captura: la hoja Corregir la carga inicial, con Pactado con el cliente, Ya cobrado al cargar la obra, Estaba cargado, y Cómo queda con los totales viejos tachados al lado de los nuevos. */}
+
+<Note>
+Si la obra tuvo un **Actualizar el contrato**, lo pactado de esta hoja puede no coincidir con el resumen de la obra, y está bien. Corregir no es repactar.
+</Note>
+
+Por ejemplo, en Casa López, lo pactado pasa de \$ 18.400.000 a \$ 19.000.000 y lo cobrado de \$ 7.200.000 a \$ 6.500.000. La ganancia esperada queda en \$ 3.700.000 y lo que falta cobrar en \$ 12.500.000.
+
+En **Lo que pasó** queda quién la corrigió y **Ver qué cambió**. Mirá [Cuando alguien corrigió una carga](/obras/la-obra#cuando-alguien-corrigió-una-carga). **Corregir** y **Anular** de un movimiento siguen como están: mirá [Corregir una carga de hoy](#corregir-una-carga-de-hoy).
+
 ## Quién puede corregir o anular
 
 No solo quien lo cargó: puede quien tiene permiso para cargar ese tipo de cosa en ese lugar. Por ejemplo, alguien con **Cargar gastos, pagos y contrataciones** puede anular cualquier gasto, pago o contrato de sus obras. Los retiros los anula solo un administrador. Mirá [qué ve cada uno](/tu-estudio/permisos).
@@ -97,5 +131,5 @@ No solo quien lo cargó: puede quien tiene permiso para cargar ese tipo de cosa 
 </Accordion>
 
 <Accordion title="No me aparece Corregir">
-  La carga no tiene fecha de hoy, o ya está anulada. Usá **Anular** y cargala de nuevo. Si tampoco ves **Anular**, no tenés permiso para cargar ese tipo de cosa.
+  La carga no tiene fecha de hoy, o ya está anulada. Usá **Anular** y cargala de nuevo. Si tampoco ves **Anular**, no tenés permiso para cargar ese tipo de cosa. **Corregir la carga inicial** es otra cosa: está en el **⋯** de la obra, y no aparece si la obra nació como presupuesto o si no podés actualizar el contrato.
 </Accordion>
