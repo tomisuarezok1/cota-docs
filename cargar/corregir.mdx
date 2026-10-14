@@ -4,17 +4,19 @@ description: "¿Cómo corrijo o anulo algo que cargué?"
 icon: "rotate-left"
 ---
 
-En COTA no se edita una carga: se corrige o se anula. Si recién guardaste, tocá **Deshacer** en el aviso de abajo. Si la carga tiene fecha de hoy, **Corregir** te abre Cargar con todo puesto. Si es de otro día, la anulás y la cargás de nuevo. Si lo que quedó mal es lo pactado o lo cobrado al cargar la obra, eso se arregla aparte: [Corregir la carga inicial de una obra](#corregir-la-carga-inicial-de-una-obra).
+En COTA no se edita una carga: se corrige o se anula. Si recién guardaste, tocá **Deshacer** en el aviso de abajo. En una obra, **Corregir** está en cualquier carga, de hoy o de otro día: se abre una hoja con el antes y el después, y lo original queda guardado. En el estudio, **Corregir** sigue solo para la fecha de hoy. Si lo que quedó mal es lo pactado o lo cobrado al cargar la obra, eso se arregla aparte: [Corregir la carga inicial de una obra](#corregir-la-carga-inicial-de-una-obra).
 
-<Frame><img src="/images/cargar/de-donde-salio.png" alt="Un movimiento abierto con ¿De dónde salió?, Corregir y Anular" style={{ maxWidth: "320px" }} /></Frame>
+<Frame><img src="/images/cargar/corregir-cualquier-dia.png" alt="Lo que pasó de una obra, con Corregir en cargas de junio y de mayo" style={{ maxWidth: "100%" }} /></Frame>
 
 ## Qué usar en cada caso
 
 | Situación | Usá |
 |---|---|
 | Recién guardaste y te diste cuenta | **Deshacer**, en el aviso de abajo |
-| La carga tiene fecha de hoy | **Corregir** |
-| La carga es de otro día, o es una actualización | **Anular**, y la cargás de nuevo |
+| Querés cambiar el monto de una carga de la obra, de hoy o de otro día | **Corregir** |
+| La cargaste en otra obra, o con otro tipo | **Anular**, y la cargás de nuevo |
+| Es un gasto, un ingreso o un retiro del estudio, y tiene fecha de hoy | **Corregir** |
+| Es del estudio y es de otro día | **Anular**, y la cargás de nuevo |
 | Lo pactado o lo cobrado al cargar la obra | **Corregir la carga inicial**, en el **⋯** de la obra |
 
 ## Deshacer, apenas guardás
@@ -29,35 +31,49 @@ Al tocarlo dice **Deshaciendo…** y después «Listo: lo deshiciste.». Deshace
 
 ## Dónde están Corregir y Anular
 
-Están adentro de cada carga, en **¿De dónde salió?**:
-
-- **En una obra:** pestaña **Lo que pasó**. Tocá **¿De dónde salió?** en la carga que querés cambiar. Mirá [leer una obra](/obras/la-obra).
-- **En el estudio:** en **Mi estudio**, en **Lo que pasó en el estudio** (o en **Ver todo ›** si es más vieja). Mirá [tu plata](/estudio/tu-plata).
+- **En una obra:** en la pestaña **Lo que pasó**, **Corregir** está en la carga, también si es de otro día. **Anular** está adentro, en **¿De dónde salió?**. Mirá [leer una obra](/obras/la-obra).
+- **En el estudio:** en **Mi estudio**, en **Lo que pasó en el estudio** (o en **Ver todo ›** si es más vieja). Los dos están en **¿De dónde salió?**, y **Corregir** solo si la carga tiene fecha de hoy. Mirá [tu plata](/estudio/tu-plata).
 
 **¿De dónde salió?** también te cuenta quién la cargó y cuándo («Cargado el 5/10 por Lucía.»), y si COTA avisó algo en ese momento.
 
-## Corregir una carga de hoy
+## Corregir una carga de cualquier día
 
-**Corregir** solo aparece en lo que tiene fecha de hoy. Cuenta la fecha de lo que pasó, no el día en que lo cargaste: si hoy cargaste algo con fecha de ayer, ya no se corrige, se anula.
+En la obra, **Corregir** está en cada carga que no esté anulada. Da igual si la fecha es hoy o de antes. Cuenta la fecha de lo que pasó, no el día en que lo cargaste: si hoy cargaste un pago con fecha de ayer, lo corregís igual.
+
+La ve quien puede **Actualizar el contrato**. Si tenés **Solo los costos**, no aparece.
 
 <Steps>
-  <Step title="Abrí la carga">
-    En **Lo que pasó**, tocá **¿De dónde salió?** y después **Corregir**.
+  <Step title="Tocá Corregir">
+    En **Lo que pasó**, en la carga, tocá **Corregir**.
   </Step>
-  <Step title="Cambiá lo que estaba mal">
-    Se abre **Corregir una carga** con todo puesto: el tipo, el monto, la moneda, el cambio, la fecha, el concepto, la aclaración, el comprobante, el rubro y a quién. En un gasto o un pago de una obra, **¿De dónde sale?** viene como se guardó. Arriba dice: «Estás corrigiendo una carga de hoy. Al guardar, la original se anula y queda la nueva.»
+  <Step title="Cambiá el monto">
+    Se abre la hoja, por ejemplo **Corregir cobro** o **Corregir pago**. Arriba, en mayúsculas, están la obra y el día («Casa López · cobro del 15/05») y dice: «Sirve para cualquier carga, sea de hoy o de antes. Lo original queda guardado.»
+
+    El **Monto** es lo único que se escribe. Debajo dice **Estaba cargado**, con el número de ahora. Si ya la habías corregido, ese número es el de ahora, no el primero. La **Fecha** y el **Detalle** se ven y no se cambian: la corrección queda con la fecha de la carga.
   </Step>
-  <Step title="Guardá">
-    Ves «Corrección guardada · Obra Torres · \$ 850.000». La carga nueva dice en la historia «Corregido el 5/10: era \$ 580.000.»
+  <Step title="Mirá cómo queda">
+    **Cómo queda** muestra los totales de esa carga. Si un número cambia, el de antes queda tachado y el nuevo aparece al lado.
+
+    La diferencia no va siempre a lo cobrado. Un cobro mueve lo cobrado y lo que falta cobrar. Un pago mueve la caja y lo que debés. Un gasto mueve lo gastado y la caja. Una actualización del contrato mueve lo pactado, la ganancia esperada y lo que falta cobrar. Una actualización de un rubro mueve la ganancia esperada. Un **Contraté** mueve lo gastado y lo que debés. Un retiro mueve la caja.
+  </Step>
+  <Step title="Guardá la corrección">
+    **Guardar corrección** se prende solo si cambiaste el monto. Si volvés al número de **Estaba cargado**, se apaga. Mientras guarda dice **Guardando…**. Después ves «Corrección guardada. La carga original queda como estaba.»
   </Step>
 </Steps>
 
+<Frame><img src="/images/cargar/hoja-corregir-cobro.png" alt="La hoja Corregir cobro, con el monto, Estaba cargado, la fecha, el detalle, y Cómo queda con el número viejo tachado y el nuevo al lado" style={{ maxWidth: "100%" }} /></Frame>
+
+<Frame><img src="/images/cargar/hoja-corregir-cobro-celular.png" alt="La misma hoja Corregir cobro en el celular, con Cómo queda y Guardar corrección" style={{ maxWidth: "320px" }} /></Frame>
+
+Por ejemplo, en Casa López, un cobro de \$ 4.500.000 pasa a \$ 4.000.000. En **Cómo queda**, lo cobrado baja y lo que falta cobrar sube: el número viejo tachado y el nuevo al lado.
+
 Lo que tenés que saber:
 
-- Podés cambiar el tipo (por ejemplo, de **Gasté** a **Pagué**), pero no la obra. Si la cargaste en otra obra, anulala y cargala en la que va.
-- En un contrato, **¿A quién contrataste?** llega vacío: escribí de nuevo el nombre.
-- Las actualizaciones no se corrigen: se anulan y se cargan de nuevo.
-- Una corrección no trae **Deshacer**: la original ya quedó anulada.
+- Solo cambia el monto. No la obra, ni el tipo, ni a quién, ni el detalle. Si la cargaste en otra obra, o era un **Gasté** y tenía que ser un **Pagué**, anulala y cargala de nuevo.
+- En el estudio, **Corregir** sigue solo si la carga tiene fecha de hoy. Abre Cargar con todo puesto. Arriba dice: «Estás corrigiendo una carga de hoy. Al guardar, la original se anula y queda la nueva.» Ahí sí podés cambiar el tipo. Lo de otro día se anula y se carga de nuevo.
+- Si la carga está en otra moneda que la obra, la hoja lo avisa: «Esta carga está en otra moneda que la obra. La diferencia se guarda con el tipo de cambio de la carga; los totales de la obra la toman al mirarlos.»
+- Una corrección no trae **Deshacer**. Lo original queda guardado. Si el monto nuevo no era el que querías, abrí **Corregir** otra vez.
+- En **Lo que pasó** queda quién la corrigió, cuándo, y **Ver qué cambió**. Mirá [Cuando alguien corrigió una carga](/obras/la-obra#cuando-alguien-corrigió-una-carga).
 
 ## Anular
 
@@ -80,7 +96,7 @@ Qué pasa cuando anulás:
 Después de anular, cargá lo correcto desde **Cargar**.
 
 <Note>
-Cuando una carga quedó corregida dejando rastro, en **Lo que pasó** de la obra se ve quién la corrigió, cuándo, y **Ver qué cambió**. Esa carga no se tacha y el monto sigue igual. **Anular**, y **Corregir** en una carga de hoy, siguen como están: la original queda anulada. Mirá [Cuando alguien corrigió una carga](/obras/la-obra#cuando-alguien-corrigió-una-carga).
+**Anular** sigue igual: la carga queda tachada, con la fecha del original. **Corregir** en la obra no la anula. El rastro queda en **Lo que pasó**. Mirá [Cuando alguien corrigió una carga](/obras/la-obra#cuando-alguien-corrigió-una-carga).
 </Note>
 
 ## Corregir la carga inicial de una obra
@@ -114,11 +130,13 @@ Si la obra tuvo un **Actualizar el contrato**, lo pactado de esta hoja puede no 
 
 Por ejemplo, en Casa López, lo pactado pasa de \$ 18.400.000 a \$ 19.000.000 y lo cobrado de \$ 7.200.000 a \$ 6.500.000. La ganancia esperada queda en \$ 3.700.000 y lo que falta cobrar en \$ 12.500.000.
 
-En **Lo que pasó** queda quién la corrigió y **Ver qué cambió**. Mirá [Cuando alguien corrigió una carga](/obras/la-obra#cuando-alguien-corrigió-una-carga). **Corregir** y **Anular** de un movimiento siguen como están: mirá [Corregir una carga de hoy](#corregir-una-carga-de-hoy).
+En **Lo que pasó** queda quién la corrigió y **Ver qué cambió**. Mirá [Cuando alguien corrigió una carga](/obras/la-obra#cuando-alguien-corrigió-una-carga). Para el monto de un movimiento, mirá [Corregir una carga de cualquier día](#corregir-una-carga-de-cualquier-día).
 
 ## Quién puede corregir o anular
 
-No solo quien lo cargó: puede quien tiene permiso para cargar ese tipo de cosa en ese lugar. Por ejemplo, alguien con **Cargar gastos, pagos y contrataciones** puede anular cualquier gasto, pago o contrato de sus obras. Los retiros los anula solo un administrador. Mirá [qué ve cada uno](/tu-estudio/permisos).
+**Anular**, y el **Corregir** de hoy del estudio, los puede quien tiene permiso para cargar ese tipo de cosa en ese lugar. No hace falta que sea quien lo cargó. Por ejemplo, alguien con **Cargar gastos, pagos y contrataciones** puede anular cualquier gasto, pago o contrato de sus obras. Los retiros los anula solo un administrador.
+
+En la obra, la hoja de **Corregir** la ve quien puede **Actualizar el contrato**. Mirá [qué ve cada uno](/tu-estudio/permisos).
 
 ## Dudas frecuentes
 
@@ -131,5 +149,5 @@ No solo quien lo cargó: puede quien tiene permiso para cargar ese tipo de cosa 
 </Accordion>
 
 <Accordion title="No me aparece Corregir">
-  La carga no tiene fecha de hoy, o ya está anulada. Usá **Anular** y cargala de nuevo. Si tampoco ves **Anular**, no tenés permiso para cargar ese tipo de cosa. **Corregir la carga inicial** es otra cosa: está en el **⋯** de la obra, y no aparece si la obra nació como presupuesto o si no podés actualizar el contrato.
+  En una obra, **Corregir** está en cada carga que no esté anulada, de hoy o de otro día. La ve quien puede actualizar el contrato. Si no la ves, la carga ya está anulada o no tenés ese permiso. **Anular** está en **¿De dónde salió?**: si tampoco la ves, no tenés permiso para cargar ese tipo de cosa. En el estudio, **Corregir** sigue solo en lo de hoy. **Corregir la carga inicial** es otra cosa: está en el **⋯** de la obra, y no aparece si la obra nació como presupuesto o si no podés actualizar el contrato.
 </Accordion>
