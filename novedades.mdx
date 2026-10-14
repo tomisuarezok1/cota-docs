@@ -2,13 +2,14 @@
 title: "Novedades"
 description: "¿Qué cambió en COTA?"
 icon: "bullhorn"
+rss: true
 ---
 
 Lo nuevo y lo que arreglamos en COTA, lo más reciente primero.
 
 Cada entrada lleva la fecha y una sola etiqueta: «Nuevo» si antes no estaba, «Mejora» si algo que ya usabas quedó mejor, o «Bug corregido» si algo andaba mal y lo arreglamos.
 
-<Update label="14 de octubre de 2026" tags={["Mejora"]}>
+<Update label="14 de octubre de 2026" description="Mejora" tags={["Importar"]}>
   ## Lo que importás del Excel queda línea por línea
 
   Al importar una obra desde el Excel, cada línea de la planilla queda como su propio movimiento en **Lo que pasó**: cada cobro con su fecha y su monto, y cada gasto o pago con su rubro. Antes quedaba todo junto. Cada uno tiene su **Corregir**, así que corregís una línea sin tocar las demás. Al final sigue la **Apertura · desde tu Excel**.
@@ -18,17 +19,23 @@ Cada entrada lleva la fecha y una sola etiqueta: «Nuevo» si antes no estaba, �
   Cómo funciona: [Desde tu Excel](/empezar/desde-el-excel#que-queda-en-la-obra).
 </Update>
 
-<Update label="13 de octubre de 2026" tags={["Mejora"]}>
+<Update label="13 de octubre de 2026" description="Mejora" tags={["Obras"]}>
   ## Ves cuánto pesa cada rubro y anotá el proveedor
 
   En el editor de un presupuesto, debajo de «Ve \$ …» cada rubro muestra una barra chica y cuánto pesa sobre el total, por ejemplo «66,67 % del total». Sale del precio que ve el cliente, no del costo, y no se guarda: se recalcula solo. Si la ganancia va metida en los rubros, los porcentajes suman 100 %. Si va como honorarios, lo que falta es esa línea.
+
+  Cómo funciona: [Un presupuesto](/obras/presupuesto#cuánto-pesa-cada-rubro-y-el-proveedor).
+</Update>
+
+<Update label="13 de octubre de 2026" description="Mejora" tags={["Obras"]}>
+  ## Anotá el proveedor
 
   Cada rubro tiene un campo **Proveedor**. Es una nota tuya: se guarda con el presupuesto y el cliente no la ve. Debajo dice «Solo para vos. No sale en el link.»
 
   Cómo funciona: [Un presupuesto](/obras/presupuesto#cuánto-pesa-cada-rubro-y-el-proveedor).
 </Update>
 
-<Update label="13 de octubre de 2026" tags={["Mejora"]}>
+<Update label="13 de octubre de 2026" description="Mejora" tags={["Mi estudio"]}>
   ## Una obra archivada ya no suma en los números del estudio
 
   Cuando archivás una obra, deja de contar en **Mi estudio**: **Tu caja hoy**, **Debés**, **Te falta cobrar** (y el «de N obras» baja en uno) y **Lo que ganaste**. También sale de lo que le debés a un proveedor, obra por obra.
@@ -38,7 +45,7 @@ Cada entrada lleva la fecha y una sola etiqueta: «Nuevo» si antes no estaba, �
   Cómo funciona: [Tu plata](/estudio/tu-plata#las-obras-archivadas-no-cuentan).
 </Update>
 
-<Update label="13 de octubre de 2026" tags={["Nuevo"]}>
+<Update label="13 de octubre de 2026" description="Nuevo" tags={["Cargar", "Hoy"]}>
   ## Los tutoriales se abren en una miniatura
 
   En **Cargar**, en el menú de **Cargar** y debajo del paso que sigue en **Primeros pasos**, el video de ayuda es una miniatura: el póster, el play, el título, cuánto dura y «Se abre acá mismo». Al tocarla, el video se abre ahí mismo, en la compu o en el celular, sin ir a otra página.
@@ -48,7 +55,7 @@ Cada entrada lleva la fecha y una sola etiqueta: «Nuevo» si antes no estaba, �
   Cómo funciona: [Cómo se carga](/cargar/como-cargar#la-miniatura-del-tutorial).
 </Update>
 
-<Update label="13 de octubre de 2026" tags={["Nuevo"]}>
+<Update label="13 de octubre de 2026" description="Nuevo" tags={["Obras"]}>
   ## Archivá una obra
 
   En el menú **⋯**, al final y aparte, aparece **Archivar obra** para quien puede archivar y restaurar obras (el administrador, por el rol). Confirmás «¿Archivás «Casa López»?» y volvés a Obras con **Deshacer** y el aviso «Casa López» archivada. Ya no está en Obras ni en Inicio. Desde **Ver obras archivadas (N) →** la restaurás: no aparece en Hoy ni en Para hacer.
@@ -56,7 +63,7 @@ Cada entrada lleva la fecha y una sola etiqueta: «Nuevo» si antes no estaba, �
   Cómo funciona: [Tus obras](/obras/tus-obras#archivar-una-obra).
 </Update>
 
-<Update label="13 de octubre de 2026" tags={["Mejora"]}>
+<Update label="13 de octubre de 2026" description="Mejora" tags={["Cargar"]}>
   ## Elegís el rubro en dos grupos
 
   En **Gasté**, **Contraté** y **Actualicé** (en **Un rubro o contratista**), al elegir el rubro la lista se parte en dos. Arriba, **De esta obra**: los que la obra ya tiene con presupuesto. Abajo, **Otro rubro (no estaba en el presupuesto)**: el catálogo del estudio, con buscador, para uno que todavía no estaba presupuestado.
@@ -66,7 +73,7 @@ Cada entrada lleva la fecha y una sola etiqueta: «Nuevo» si antes no estaba, �
   Cómo funciona: [Un contrato](/cargar/contrato#elegís-el-rubro-en-dos-grupos).
 </Update>
 
-<Update label="13 de octubre de 2026" tags={["Nuevo"]}>
+<Update label="13 de octubre de 2026" description="Nuevo" tags={["Cargar"]}>
   ## Corregí los números con los que cargaste una obra
 
   Si al cargar una obra quedó mal lo pactado con el cliente o lo que ya habías cobrado, lo corregís desde el menú **⋯**, con **Corregir la carga inicial**. Está justo después de **Actualizar el contrato**, y la ve quien puede actualizar el contrato. Si la obra nació como presupuesto, no aparece.
@@ -76,7 +83,7 @@ Cada entrada lleva la fecha y una sola etiqueta: «Nuevo» si antes no estaba, �
   Cómo funciona: [Corregir o anular](/cargar/corregir#corregir-la-carga-inicial-de-una-obra).
 </Update>
 
-<Update label="13 de octubre de 2026" tags={["Nuevo"]}>
+<Update label="13 de octubre de 2026" description="Nuevo" tags={["Obras"]}>
   ## Ves quién corrigió una carga y qué cambió
 
   En **Lo que pasó** de una obra, si alguien corrigió una carga sin anularla, la carga queda como estaba: no se tacha y el monto sigue igual. Sobre la carga dice quién la corrigió y cuándo, por ejemplo «Corregida por Lucía el 13/10».
@@ -86,7 +93,7 @@ Cada entrada lleva la fecha y una sola etiqueta: «Nuevo» si antes no estaba, �
   Cómo funciona: [Leer una obra](/obras/la-obra#cuando-alguien-corrigió-una-carga).
 </Update>
 
-<Update label="13 de octubre de 2026" tags={["Nuevo"]}>
+<Update label="13 de octubre de 2026" description="Nuevo" tags={["Obras"]}>
   ## Armá un presupuesto antes de arrancar la obra
 
   Un presupuesto es una obra que todavía no arrancó. En **Obras** aparece el grupo **Presupuestos**, después de las que están en curso y antes de las completadas. Desde el **+** elegís **Un presupuesto** y armás el precio: los rubros, tu ganancia y hasta cuándo vale.
@@ -96,17 +103,23 @@ Cada entrada lleva la fecha y una sola etiqueta: «Nuevo» si antes no estaba, �
   Cómo funciona: [Un presupuesto](/obras/presupuesto#un-presupuesto-es-una-obra-sin-arrancar).
 </Update>
 
-<Update label="13 de octubre de 2026" tags={["Nuevo"]}>
+<Update label="13 de octubre de 2026" description="Nuevo" tags={["Cargar"]}>
   ## Elegí de qué caja sale un gasto o un pago
 
   En **Cargar**, un **Gasté** o un **Pagué** de una obra pregunta **¿De dónde sale?**. **Caja del estudio** viene elegida. **Caja chica de la obra** es la plata que el estudio deja en la obra para gastos chicos, el fondo fijo. Se guarda con la carga. El gasto sigue sumando a su rubro y el pago sigue bajando lo que le debés: la elección solo dice de qué caja salió la plata.
+
+  Cómo funciona: [Un gasto o un pago](/cargar/gasto-y-pago#¿de-dónde-sale).
+</Update>
+
+<Update label="13 de octubre de 2026" description="Nuevo" tags={["Cargar"]}>
+  ## COTA te avisa si la caja chica queda debajo del aviso
 
   Si elegís **Caja chica de la obra** y, con esa carga, la caja chica queda debajo del aviso del fondo fijo, antes de guardar **COTA te avisa**: «A la caja chica le quedan \$ 39.000» y «Está debajo del aviso del fondo fijo.». Es aparte del aviso de tu bolsillo. No va a Para hacer ni al celular.
 
   Cómo funciona: [Un gasto o un pago](/cargar/gasto-y-pago#¿de-dónde-sale).
 </Update>
 
-<Update label="13 de octubre de 2026" tags={["Mejora"]}>
+<Update label="13 de octubre de 2026" description="Mejora" tags={["Importar"]}>
   ## Los ítems del Excel quedan con su nombre
 
   Al traer una planilla, cada ítem queda con el nombre que le pusiste. «Cerámicos» y «Porcelanato» ya no se juntan en «Pisos y revestimientos»: cada uno es su rubro.
@@ -116,7 +129,7 @@ Cada entrada lleva la fecha y una sola etiqueta: «Nuevo» si antes no estaba, �
   Cómo funciona: [Desde tu Excel](/empezar/desde-el-excel#los-nombres-de-tu-excel).
 </Update>
 
-<Update label="12 de octubre de 2026" tags={["Mejora"]}>
+<Update label="12 de octubre de 2026" description="Mejora" tags={["Importar", "Obras"]}>
   ## Seguí en Obras la obra que estás importando
 
   Mientras COTA lee tu planilla, podés seguir usando la app. En **Obras**, arriba de las secciones de siempre, aparece **Importando**. La fila dice **Importando…** y el paso en el que va, y se actualiza sola. Tocándola volvés a la importación.
@@ -126,7 +139,7 @@ Cada entrada lleva la fecha y una sola etiqueta: «Nuevo» si antes no estaba, �
   Cómo funciona: [Desde tu Excel](/empezar/desde-el-excel#mientras-se-importa).
 </Update>
 
-<Update label="9 de octubre de 2026" tags={["Nuevo"]}>
+<Update label="9 de octubre de 2026" description="Nuevo" tags={["Obras"]}>
   ## Cambiá el nombre de la obra
 
   Si el nombre de una obra quedó mal, lo corregís desde el menú **⋯**. Al lado de **Nombre del cliente**, tocá **Nombre de la obra**, escribí el nombre y tocá **Guardar el nombre**. Lo ve solo el administrador.
@@ -136,7 +149,7 @@ Cada entrada lleva la fecha y una sola etiqueta: «Nuevo» si antes no estaba, �
   Cómo funciona: [Estado y fechas](/obras/estado-y-fechas#nombre-de-la-obra).
 </Update>
 
-<Update label="8 de octubre de 2026" tags={["Bug corregido"]}>
+<Update label="8 de octubre de 2026" description="Bug corregido" tags={["Importar"]}>
   ## COTA lee solo la hoja que le indicás
 
   Si en **Contame de la planilla (opcional)** nombrás una hoja que está en el archivo, COTA lee solo esa. Antes ese texto era una pista y a veces tomaba un número de otra pestaña. Si en la hoja falta un dato, te lo pregunta.
@@ -146,7 +159,7 @@ Cada entrada lleva la fecha y una sola etiqueta: «Nuevo» si antes no estaba, �
   Cómo funciona: [Desde tu Excel](/empezar/desde-el-excel#si-le-indicas-una-hoja).
 </Update>
 
-<Update label="8 de octubre de 2026" tags={["Bug corregido"]}>
+<Update label="8 de octubre de 2026" description="Bug corregido" tags={["Importar"]}>
   ## Ahora podés volver al número de tu Excel
 
   Cuando COTA te pregunta por un monto al revisar tu planilla, elegir una opción ya no cambia el número de una. Primero ves cómo quedaría, por ejemplo «El gastado queda en \$ 800.000. El Excel decía \$ 1.200.000.», y recién cambia cuando tocás **Usar este**.
