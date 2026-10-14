@@ -10,6 +10,26 @@ Lo nuevo y lo que arreglamos en COTA, lo más reciente primero.
 Cada entrada lleva la fecha y una sola etiqueta: «Nuevo» si antes no estaba, «Mejora» si algo que ya usabas quedó mejor, o «Bug corregido» si algo andaba mal y lo arreglamos.
 
 <Update label="14 de octubre de 2026" description="Nuevo" tags={["Obras"]}>
+  ## Mirás cada etapa de la obra en su pestaña
+
+  Si la obra tiene más de una etapa, arriba de **Lo contratado** y **Lo que pasó** aparecen pestañas: **Toda la obra**, una por cada etapa (con tilde si está cerrada) y **+** para agregar otra. **Toda la obra** es la vista de siempre y suma las etapas abiertas. Cada pestaña de etapa muestra el nombre, lo pactado, el contrato, los movimientos, la ganancia y **Te falta cobrar** de esa etapa.
+
+  Una obra con una sola etapa se ve igual que antes: no hay pestañas. La primera de más se agrega desde el **⋯**, con **Agregar etapa o contrato**. Lo que ya estaba queda en **Etapa 1**.
+
+  Cómo funciona: [Leer una obra](/obras/la-obra#las-etapas-de-la-obra).
+</Update>
+
+<Update label="14 de octubre de 2026" description="Nuevo" tags={["Obras", "Hoy"]}>
+  ## Cerrá una etapa cuando ya no te tiene que avisar
+
+  En una etapa abierta, quien puede ve **Cerrar etapa**. COTA pregunta «¿Cerrar la etapa «Ampliación»?»: deja de avisarte en Hoy (cobros, rubros pasados, deudas de esa etapa), no se borra nada y se puede reabrir. La etapa cerrada muestra **Etapa cerrada el 14/10** y, debajo, «No te avisa en Hoy.», con **Reabrir**. Mientras está cerrada no se editan el nombre ni lo pactado.
+
+  Al reabrir, vuelven los avisos de Hoy de esa etapa. Los números y los movimientos siguen. Si la obra tiene más de una etapa, en Hoy el aviso nombra la etapa, por ejemplo «Casa López · Ampliación».
+
+  Cómo funciona: [Leer una obra](/obras/la-obra#cerrar-y-reabrir-una-etapa).
+</Update>
+
+<Update label="14 de octubre de 2026" description="Nuevo" tags={["Obras"]}>
   ## Mirá dónde está la plata de la obra
 
   En la obra, debajo de los cuatro números, aparece **Caja de la obra · Dónde está la plata**. Una tarjeta dice cuánto está en el estudio. La otra, **Caja chica en obra**, dice cuánto le queda a la caja chica, quién la maneja, lo pasado y lo gastado. Si quedan pocos pesos, la tarjeta avisa en naranja.

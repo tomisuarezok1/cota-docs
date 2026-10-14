@@ -4,7 +4,7 @@ description: "¿Cómo leo la página de una obra?"
 icon: "house"
 ---
 
-Arriba de todo, la portada te dice en una frase cómo viene la obra y te muestra cuatro números: cuánta ganancia te queda, la caja de la obra, lo que te falta cobrar y lo que debés. Debajo hay dos pestañas: **Lo contratado**, rubro por rubro, y **Lo que pasó**, todo lo que se cargó, por fecha.
+Arriba de todo, la portada te dice en una frase cómo viene la obra y te muestra cuatro números: cuánta ganancia te queda, la caja de la obra, lo que te falta cobrar y lo que debés. Debajo hay dos pestañas: **Lo contratado**, rubro por rubro, y **Lo que pasó**, todo lo que se cargó, por fecha. Si la obra tiene más de una etapa, arriba de esas dos aparecen las pestañas de etapa. Mirá [Las etapas de la obra](#las-etapas-de-la-obra).
 
 <Note>
 Esta página es la de una obra que ya arrancó. Si en **Obras** tocás un presupuesto, se abre el editor. Mirá [Un presupuesto](/obras/presupuesto).
@@ -110,11 +110,92 @@ Si sos administrador y compartiste la obra, ahí también está la tarjeta **Com
 
 ## La obra en la compu
 
-La portada va de lado a lado, con los cuatro números en una fila, y debajo las pestañas. Si la obra tiene pendientes (o la compartiste), **Para hacer** va a la derecha; si no, la obra ocupa todo el ancho.
+La portada va de lado a lado, con los cuatro números en una fila, y debajo las pestañas. Si la obra tiene pendientes (o la compartiste), **Para hacer** va a la derecha; si no, la obra ocupa todo el ancho. Si hay más de una etapa, arriba de **Lo contratado** y **Lo que pasó** van las pestañas de etapa. Mirá [Las etapas de la obra](#las-etapas-de-la-obra).
 
 <Frame><img src="/images/obras/obra-compu.png" alt="Una obra en la compu: la portada con los cuatro números en fila, la pestaña Lo contratado y Para hacer a la derecha" style={{ maxWidth: "100%" }} /></Frame>
 
+## Las etapas de la obra
+
+Una obra puede tener más de un contrato. Por ejemplo, **Etapa 1** y después **Ampliación**. Si tiene **más de una etapa**, arriba de **Lo contratado** y **Lo que pasó** aparecen pestañas: **Toda la obra**, una por cada etapa y, si podés agregar, un **+**.
+
+{/* Captura: pestañas Toda la obra, Etapa 1 y Ampliación (con tilde si está cerrada) y el +. */}
+
+Una obra con **una sola etapa** se ve igual que antes. Esas pestañas no aparecen.
+
+### Toda la obra
+
+**Toda la obra** es la página de siempre: la portada, **Lo contratado** y **Lo que pasó**. Debajo de la frase de la portada dice «suma de las 2 etapas». El número es cuántas etapas tiene la obra, también las cerradas.
+
+La portada y **Lo contratado** suman las etapas que siguen abiertas. Lo que pactaste en una etapa abierta suma a **Te falta cobrar** y al «de \$ … del contrato». No mueve la caja: el pacto todavía no es plata que entró. Una etapa cerrada no entra en esos números. La seguís viendo en su pestaña, con sus números y sus movimientos.
+
+**Lo que pasó** muestra lo que se cargó en la obra, también lo de una etapa que ya cerraste.
+
+### La pestaña de una etapa
+
+Tocá el nombre de la etapa, por ejemplo **Ampliación**. En vez de la portada y de las dos pestañas, ves lo de esa etapa:
+
+- **Nombre** y **Lo pactado con el cliente**. Si está abierta y podés, al lado está **Editar**. Guardás con **Guardar** o volvés con **Cancelar**.
+- **Contrato de \$ …**, y cuántos movimientos tiene.
+- **Te queda de ganancia** y **Te falta cobrar**, de esa etapa. Si la etapa está cerrada, la ganancia dice **Te quedó de ganancia**.
+- Los movimientos de esa etapa. Si no hay ninguno, dice «Todavía no hay movimientos en esta etapa.» Si hay más, abajo están **Siguientes** y **← Anteriores**.
+
+Si la etapa está cerrada, su pestaña lleva una tilde.
+
+### Agregar una etapa
+
+Lo ve el administrador, o quien tiene «Actualizar el contrato con el cliente». Si no lo tenés, no aparece el **+** ni la opción del **⋯**.
+
+- Con **una sola etapa**, la primera de más se agrega desde el **⋯**: **Agregar etapa o contrato**.
+- Cuando ya hay pestañas, el **+** abre lo mismo. En el **⋯** esa opción ya no está.
+
+Se abre **Nueva etapa o contrato**. Lo que la obra ya tenía pasa a la pestaña **Etapa 1**, con los mismos números. El nombre de esa pestaña se puede cambiar después, con **Editar**.
+
+<Steps>
+  <Step title="Poné el nombre">
+    Por ejemplo, Ampliación.
+  </Step>
+  <Step title="Poné lo pactado con el cliente">
+    Es el total de este contrato.
+  </Step>
+  <Step title="Elegí los rubros">
+    En **Rubros de este contrato**, tocá **Elegí los rubros** y marcá los de esta etapa. Si no marcás ninguno, la etapa igual se puede guardar.
+  </Step>
+  <Step title="Tocá Guardar">
+    La obra pasa a tener pestañas y quedás en la etapa nueva.
+  </Step>
+</Steps>
+
+Si falta el nombre, COTA dice «La etapa necesita un nombre.» Si falta lo pactado, «Poné lo pactado con el cliente.»
+
+## Cerrar y reabrir una etapa
+
+En una etapa abierta, abajo de los movimientos, quien puede ve **Cerrar etapa**. Es el administrador, o quien tiene «Actualizar el contrato con el cliente».
+
+<Steps>
+  <Step title="Tocá Cerrar etapa">
+    COTA pregunta «¿Cerrar la etapa «Ampliación»?».
+  </Step>
+  <Step title="Leé qué pasa">
+    «Deja de avisarte en Hoy (cobros, rubros pasados, deudas de esta etapa).» Y: «No se borra nada. La podés reabrir cuando quieras.»
+  </Step>
+  <Step title="Confirmá o volvé">
+    **Cerrar etapa** la cierra. **Cancelar** no cambia nada.
+  </Step>
+</Steps>
+
+{/* Captura: la confirmación ¿Cerrar la etapa «Ampliación»?, con Cerrar etapa y Cancelar. */}
+
+La etapa cerrada muestra **Etapa cerrada el 14/10** y, debajo, «No te avisa en Hoy.» Al lado, **Reabrir**. Mientras está cerrada no están **Editar** ni **Cerrar etapa**. Los números y los movimientos quedan. Debajo del contrato dice «Los números y movimientos quedan como estaban.»
+
+{/* Captura: etapa cerrada, con «Etapa cerrada el 14/10», «No te avisa en Hoy.» y Reabrir. */}
+
+**Reabrir** la abre al toque, sin otra pregunta. Vuelven los avisos de Hoy de esa etapa y se puede editar el nombre y lo pactado. Nada de lo cargado se pierde.
+
+En **Toda la obra**, la etapa cerrada deja de sumar en la portada y en **Lo contratado**. Hoy deja de avisar por esa etapa. Si cerrás todas, la obra no aparece en Hoy ni en Para hacer. Si la obra tiene más de una etapa, cada aviso de una etapa abierta nombra la etapa, por ejemplo «Casa López · Ampliación». Con una sola etapa, el aviso dice el nombre de la obra, como siempre.
+
 ## La pestaña Lo contratado
+
+En **Toda la obra**, y en una obra de una sola etapa, debajo de la portada están estas dos pestañas.
 
 <Frame><img src="/images/obras/contratado.png" alt="La pestaña Lo contratado: los rubros agrupados por cómo vienen" style={{ maxWidth: "320px" }} /></Frame>
 
@@ -201,6 +282,7 @@ Si el administrador te dio **Solo los costos**, la obra te muestra solo lo que c
 - No ves la historia, la caja, lo que falta cobrar ni la ganancia.
 - En **Lo que pasó** no aparecen los cobros ni las actualizaciones del contrato con el cliente, y no está el filtro **Cobros**. Tampoco ves quién corrigió una carga ni **Ver qué cambió**: es plata del cliente.
 - En el **⋯** ves solo lo que podés hacer. Si no te toca nada, el botón no aparece.
+- No ves las pestañas de etapa. Lo pactado con el cliente no entra en esta vista, y la obra se sigue viendo como siempre.
 
 Más en [Qué ve cada uno](/tu-estudio/permisos).
 
@@ -219,5 +301,5 @@ Tocá **Cargar** estando adentro de la obra: COTA ya te pregunta «¿Qué cargá
 </Accordion>
 
 <Accordion title="Dice «No se pudieron leer los números de la obra»">
-Es un problema momentáneo. Probá de nuevo en un rato.
+Es un problema momentáneo. Probá de nuevo en un rato. Si estás en una etapa y dice «No se pudieron leer los números de esta etapa.», es lo mismo.
 </Accordion>
