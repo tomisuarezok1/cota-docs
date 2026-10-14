@@ -18,8 +18,14 @@ Compartir una obra es solo del administrador.
   <Step title="Abrí el ⋯ de la obra">
     Tocá **⋯**, arriba a la derecha, y elegí **Compartir con el cliente**. Se abre **Compartir con Familia López**: «Armá un link para que Familia López vea cómo viene la obra sin entrar a COTA. Se actualiza solo con cada carga.»
   </Step>
-  <Step title="Elegí qué rubros ve">
-    En **¿Qué rubros ve?** arrancan todos marcados. Tocá los que no quieras mostrarle. Si dejás todos, también va a ver los rubros que agregues después.
+  <Step title="Elegí qué etapas y qué rubros ve">
+    Si la obra tiene varias etapas, primero está **¿Qué etapas ve?**. Arrancan todas marcadas. Si destildás una etapa, sus rubros dejan de ofrecerse.
+
+    Debajo, **¿Qué rubros ve?** agrupa los rubros de cada etapa que dejaste marcada. Arrancan todos marcados. Tocá los que no quieras mostrarle. Si dejás todos, también va a ver los rubros que agregues después en esas etapas.
+
+    Con una sola etapa, **¿Qué etapas ve?** no aparece: la hoja se ve igual que antes.
+
+    <Frame><img src="/images/obras/compartir-etapas-hoja.png" alt="La hoja Compartir con Familia Torres: ¿Qué etapas ve? con Etapa 1 y Etapa 2 marcadas, los rubros de Etapa 1, y el aviso de que una etapa nueva no se ve hasta marcarla" style={{ maxWidth: "320px" }} /></Frame>
   </Step>
   <Step title="Elegí qué más ve">
     - **Mostrar los montos de cada rubro** (arranca apagado): «Sin montos ve solo cuánto se usó en %. Con montos ve lo que te cuesta cada rubro.»
@@ -45,7 +51,9 @@ En la página de la obra, la tarjeta **Compartida con Familia López** te dice s
 
 ### Cambiar lo que ve
 
-Desplegá **Qué ve Familia López**. Debajo del título te resume lo que ve hoy, por ejemplo «6 de 9 rubros · sin montos · con lo que pagó · con fechas». Cambiá lo que quieras y tocá **Guardar cambios**. El link sigue siendo el mismo: no hace falta mandarle otro.
+Desplegá **Qué ve Familia López**. Debajo del título te resume lo que ve hoy, por ejemplo «6 de 9 rubros · sin montos · con lo que pagó · con fechas». Si la obra tiene varias etapas, el resumen también las cuenta, por ejemplo «2 de 2 etapas · 6 de 9 rubros · sin montos · con lo que pagó · con fechas». Cambiá lo que quieras y tocá **Guardar cambios**. El link sigue siendo el mismo: no hace falta mandarle otro.
+
+En la hoja, COTA avisa: «Si sumás una etapa nueva, Familia López no la ve hasta que la marques acá.»
 
 ### Dejar de compartir
 
@@ -55,16 +63,23 @@ Si después la volvés a compartir, el link es otro: el viejo no vuelve a abrir.
 
 ## Qué ve tu cliente
 
-<Frame><img src="/images/obras/cliente.png" alt="Lo que ve el cliente: el avance de la obra, su cuenta y cada rubro" style={{ maxWidth: "320px" }} /></Frame>
+<Frame><img src="/images/obras/compartir-etapas-vista-cliente.png" alt="El link de Obra Torres para Familia Torres, de Estudio Rivas Arquitectura: arriba Toda la obra al 81 %, y debajo Etapa 1 y Etapa 2 en curso, con sus rubros y su cuenta" style={{ maxWidth: "100%" }} /></Frame>
 
 No necesita cuenta ni contraseña, y solo puede mirar.
 
 - **Arriba**, tu estudio y el nombre de la obra, «Para Familia López», el estado de la obra y cuándo se cargó algo por última vez («Actualizado hoy», «hace 3 días»).
-- **El avance**: por ejemplo «45 %» «de lo presupuestado ya se usó», sumando los rubros que elegiste. Con montos, también cuánto se usó de cuánto.
+- **El avance**: el total de lo compartido, sumando los rubros que elegiste. Si hay varias etapas, va arriba, bajo **Toda la obra**: por ejemplo «81 %» «usado de lo presupuestado». Con montos, también cuánto se usó de cuánto.
+- **Cada etapa**, si compartiste varias: debajo del total, cada una por separado. Dice si está **terminada** o **en curso**, la barra con el % y los rubros de esa etapa. Si mostrás lo que pagó, también **Pagaste** y **Te falta pagar** de esa etapa.
 - **El plazo**, si mostrás las fechas: **Arrancó** y **Fin estimado**, y mientras la obra está en curso, cuánto falta («Faltan 6 semanas para el fin estimado.»).
 - **Tu cuenta**, si mostrás lo que pagó: **Pagaste** y **Te falta pagar**.
 - **Por rubro**: cuánto se usó de cada uno, en %. Los que no arrancaron dicen «Sin arrancar»; los que se pasaron llevan la etiqueta «se pasó». Con montos, también «Usado» y «Presupuestado».
 - **Al pie**: «Se actualiza solo, cada vez que Estudio Rivas Arquitectura carga algo.»
+
+Una etapa que sumás después no aparece sola en el link. El cliente la ve recién cuando la marcás y tocás **Guardar cambios**.
+
+Con una sola etapa no hay bloques por etapa: se ve el avance, el plazo si lo mostrás, la cuenta y cada rubro.
+
+<Frame><img src="/images/obras/cliente.png" alt="Lo que ve el cliente con una sola etapa: el avance de la obra, el plazo, su cuenta y cada rubro" style={{ maxWidth: "320px" }} /></Frame>
 
 <Warning>
 Lo que tu cliente **nunca** ve: tu ganancia, a quién le pagás (contratistas y proveedores), la caja de la obra, lo que debés, los movimientos, los rubros que sacaste de la obra ni los que no tienen nada presupuestado.
