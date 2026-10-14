@@ -29,8 +29,6 @@ Lo creás desde el **+**, si podés crear obras, o lo abrís tocando la fila. Mi
   </Step>
 </Steps>
 
-{/* Captura pendiente: /images/obras/presupuesto-nuevo.png — editor vacío, Nuevo presupuesto. */}
-
 Arriba a la izquierda, **‹ Obras** vuelve a la lista. Para guardar hacen falta el nombre y el cliente. Si falta el nombre, COTA dice «Ponele nombre a la obra.» Si falta el cliente, «Decí quién es el cliente.»
 
 ### Los rubros
@@ -46,7 +44,9 @@ Cada rubro se elige de la lista, o **Otro rubro** y le ponés el nombre (el ejem
 
 En cada rubro, **El cliente lo ve** viene tildado. Si lo destildás, ese rubro queda para vos. En un rubro por unidad que el cliente ve, elegís **Solo el monto** o **Con el detalle**.
 
-Debajo del rubro, COTA te dice qué ve el cliente: «Ve \$ 13.800.000» o «No lo ve el cliente».
+Debajo del rubro, COTA te dice qué ve el cliente: «Ve \$ 120.000» o «No lo ve el cliente». Ese número es el precio. El **Costo** de arriba es lo que a vos te sale el rubro.
+
+<Frame><img src="/images/obras/presupuesto-rubros-costo.png" alt="Rubros Albañil y Carpintería: el costo en 100.000 y 50.000, y debajo «Ve $ 120.000» y «Ve $ 60.000», el precio que ve el cliente." style={{ maxWidth: "100%" }} /></Frame>
 
 ### Cuánto pesa cada rubro y el proveedor
 
@@ -60,11 +60,11 @@ Ese porcentaje sale del precio que ve el cliente, no del costo. No se guarda: si
 
 ### Tu ganancia
 
-Es una sola. **Un porcentaje** (el campo **Porcentaje**, por ejemplo 15) o **Un monto**.
+Es una sola, aparte del costo. **Un porcentaje** (el campo **Porcentaje**, por ejemplo 20) o **Un monto**. El precio se calcula con esa ganancia: el costo y el precio van en cifras distintas.
 
 Cómo la ve el cliente:
 
-- **Metida en cada rubro.** El precio de cada rubro ya la incluye.
+- **Metida en cada rubro.** «Ve \$ …» ya incluye la ganancia. En el link, cada rubro muestra ese precio.
 - **Como honorarios.** El cliente ve el costo de cada rubro, y la ganancia va aparte, en la línea **Honorarios**.
 
 ### El precio
@@ -78,7 +78,7 @@ Abajo del formulario, el resumen se actualiza solo:
 | **Honorarios** | Aparece si elegiste **Como honorarios**. |
 | **Precio** | Lo que suma el cliente: los rubros con **El cliente lo ve** tildado y, si van aparte, los honorarios. |
 
-{/* Captura pendiente: /images/obras/presupuesto-armado.png — editor con rubros, ganancia y precio. */}
+<Frame><img src="/images/obras/presupuesto-precio-resumen.png" alt="Tu ganancia al 20 %, metida en cada rubro, y el resumen de abajo: Costo $ 180.000, Ganancia $ 36.000 y Precio $ 216.000, con el botón Crear presupuesto." style={{ maxWidth: "100%" }} /></Frame>
 
 ### Hasta cuándo vale
 
@@ -86,7 +86,19 @@ En **Para el cliente**, **Vale hasta** es el día. En la fila de **Obras** se le
 
 **Aclaraciones** es el texto que acompaña el precio. El ejemplo del campo: «No incluye el conexionado de gas.»
 
+**En dólares** es opcional. Debajo dice: «Pesos por dólar, a mano. El cliente ve el total en dólares, no este número.»
+
 En un presupuesto ya guardado, arriba del nombre ves el estado y la fecha, por ejemplo «Borrador · vale hasta el 26 oct».
+
+## Qué ve el cliente
+
+En el link ve precios: el **total de la obra** y cada rubro. El costo y la ganancia no salen.
+
+Eso sale de lo que cargaste: el **costo** de cada rubro y una sola [ganancia](#tu-ganancia). Si va metida en cada rubro, cada rubro del link es el «Ve \$ …», que ya incluye la ganancia. Si va como honorarios, ve el costo de cada rubro y la línea **Honorarios**.
+
+<Frame><img src="/images/obras/presupuesto-vista-cliente.png" alt="El link del presupuesto Casa del Bosque: total de la obra $ 216.000 sin IVA, y los precios de Albañil, Carpintería y Pintura." style={{ maxWidth: "420px" }} /></Frame>
+
+Arriba, el nombre del estudio y «Presupuesto · Casa del Bosque». Debajo del total dice «sin IVA». Abajo, **Escribile al estudio por WhatsApp**, y «Si avanzás, en este mismo link vas a ver cómo va la obra.»
 
 ## Cuando el cliente dice que sí
 
