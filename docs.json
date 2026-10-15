@@ -113,6 +113,12 @@
             "pages": [
               "novedades"
             ]
+          },
+          {
+            "group": "Referencia",
+            "pages": [
+              "glosario"
+            ]
           }
         ]
       }
