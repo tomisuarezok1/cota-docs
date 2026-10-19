@@ -321,10 +321,34 @@ Se muestran de a 20; al final están **Siguientes 20** y **← Anteriores**.
 ### Cada movimiento
 
 - Arriba, qué fue, el rubro y el concepto, con el monto. Por ejemplo: «Contraté · Hormigón · Fundaciones, columnas y losas».
-- En una actualización ves de cuánto a cuánto cambió, y a la derecha cuánto movió tu ganancia, con + o −.
+- En una actualización ves de cuánto a cuánto cambió, y a la derecha cuánto cambió, con su signo y su color. Mirá [El signo y el color de los montos](#el-signo-y-el-color-de-los-montos).
 - La nota, si le pusiste una.
-- Abajo, quién lo cargó. Si se anuló, quién y cuándo. Si tiene comprobante, **Ver comprobante**.
+- Abajo, quién lo cargó. Si se anuló, quién y cuándo, y la fila queda apagada en gris y tachada. Si tiene comprobante, **Ver comprobante**.
 - Si alguien la corrigió sin anularla, la marca **Corregida por…** y **Ver qué cambió**. La carga no se tacha. Más en [Cuando alguien corrigió una carga](/obras/la-obra#cuando-alguien-corrigió-una-carga).
+
+### El signo y el color de los montos
+
+Arriba del historial, una línea chica te lo recuerda: «Verde: más ganancia · Rojo: menos».
+
+- **El signo** dice para dónde se movió el número: **+** si subió, **−** si bajó.
+- **El color** dice si te conviene: **verde** si te queda más ganancia, **rojo** si te queda menos. Si la fila no cambia tu ganancia, el monto va en negro.
+
+<Frame><img src="/images/obras/lo-que-paso-leyenda.png" alt="Lo que pasó en el celular: arriba la línea Verde: más ganancia · Rojo: menos, y debajo Pagué, Gasté y Cobré con + en negro" style={{ maxWidth: "320px" }} /></Frame>
+
+| Movimiento | Signo | Color |
+|---|---|---|
+| **Cobré**, **Pagué**, **Gasté** y **Contraté** | **+**: suma a lo cobrado, lo pagado, lo gastado o lo contratado | Negro |
+| **Actualicé** un rubro | **+** si lo contratado subió, **−** si bajó | Verde si bajó (te queda más ganancia), rojo si subió |
+| **Actualicé** el contrato con el cliente | **+** si subió, **−** si bajó | Verde si subió, rojo si bajó |
+| Una carga anulada | El que tenía | Ninguno: la fila va en gris y tachada |
+
+Por ejemplo, si un rubro pasa de \$ 12.000.000 a \$ 11.760.000 (−2 %), la fila dice «− \$ 240.000» en verde: el número bajó y tu ganancia subió.
+
+Un gasto solo te come ganancia si el rubro se pasa de lo contratado, y eso no se ve en la fila: te lo dice COTA con su aviso y en [La historia de la obra](/obras/historia). Por eso **Gasté** y **Contraté** van en negro.
+
+Si COTA avisó que la obra te queda en pérdida, la frase va a la izquierda y lo que vas abajo, a la derecha, en rojo y con **−**.
+
+En una carga anulada, **¿De dónde salió?** también se ve gris, pero lo abrís igual. Una actualización vieja, de antes de que COTA guardara de cuánto a cuánto, muestra el monto solo, sin signo ni color.
 
 ### ¿De dónde salió?
 
@@ -363,6 +387,7 @@ Si el administrador te dio **Solo los costos**, la obra te muestra solo lo que c
 - La portada tiene el anillo, una frase sobre los costos («Gastaste de más», «Vas dentro de lo contratado» o «Todavía no hay nada contratado.») y un solo número: **Debés**.
 - No ves la historia, la caja, lo que falta cobrar ni la ganancia.
 - En **Lo que pasó** no aparecen los cobros ni las actualizaciones del contrato con el cliente, y no está el filtro **Cobros**. Tampoco ves quién corrigió una carga ni **Ver qué cambió**: es plata del cliente.
+- En **Lo que pasó**, los montos tienen signo pero no color: esta vista no habla de la ganancia.
 - En el **⋯** ves solo lo que podés hacer. Si no te toca nada, el botón no aparece.
 - No ves las pestañas de etapa. Lo pactado con el cliente no entra en esta vista, y la obra se sigue viendo como siempre.
 
