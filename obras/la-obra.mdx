@@ -4,7 +4,7 @@ description: "¿Cómo leo la página de una obra?"
 icon: "house"
 ---
 
-Arriba de todo, la portada te dice en una frase cómo viene la [obra](/glosario#obra) y te muestra cuatro números: cuánta ganancia te queda, la caja de la obra, lo que te falta cobrar y lo que debés. Debajo hay dos pestañas: **Lo contratado**, rubro por rubro, y **Lo que pasó**, todo lo que se cargó, por fecha. Si la obra tiene más de una etapa, arriba de esas dos aparecen las pestañas de etapa. Mirá [Las etapas de la obra](#las-etapas-de-la-obra).
+Arriba de todo, la portada te dice en una frase cómo viene la [obra](/glosario#obra) y te muestra cuatro números: cuánta ganancia te queda, la caja de la obra, lo que te falta cobrar y lo que te falta pagar. Debajo hay dos pestañas: **Lo contratado**, rubro por rubro, y **Lo que pasó**, todo lo que se cargó, por fecha. Si la obra tiene más de una etapa, arriba de esas dos aparecen las pestañas de etapa. Mirá [Las etapas de la obra](#las-etapas-de-la-obra).
 
 <Note>
 Esta página es la de una obra que ya arrancó. Si en **Obras** tocás un presupuesto, se abre el editor. Mirá [Un presupuesto](/obras/presupuesto).
@@ -45,8 +45,8 @@ Cada número se toca: abre su detalle.
 |---|---|---|
 | [**Te queda de ganancia**](/glosario#ganancia) | La ganancia que planeaste, menos lo que se pasaron los rubros. Abajo dice cuánto perdiste («− \$ 4.250.000 de lo planeado») o «como la planeaste». Va en rojo si ya es negativa. | **La historia de la obra** |
 | [**Caja de la obra**](/glosario#caja) | Lo que cobraste menos lo que pagaste por esta obra. Si pagaste más de lo que cobraste, se llama **Pusiste de tu bolsillo** y va en rojo. | **La caja de la obra**: cuánto cobraste, cuánto pagaste y las últimas 8 semanas, semana a semana. |
-| [**Te falta cobrar**](/glosario#te-falta-cobrar) | Lo que el cliente todavía te tiene que pagar. Abajo, el total del contrato («de \$ 62.000.000 del contrato»). | **Lo que te falta cobrar**: lo pactado, cada cobro con su fecha y el botón **Cargar un cobro**. |
-| [**Debés**](/glosario#debés) | Lo ya hecho o entregado que todavía no le pagaste a proveedores y contratistas. Abajo, a cuántos les debés. | **Lo que debés**: una fila por proveedor, con su rubro, y el botón **Cargar un pago**. |
+| [**Te falta cobrar**](/glosario#te-falta-cobrar) | Lo que el cliente todavía te tiene que pagar. Abajo, el total del contrato («de \$ 62.000.000 del contrato») y lo que ya te pagó («Cobrado: \$ 32.622.700»). | **Lo que te falta cobrar**: lo pactado, cada cobro con su fecha y el botón **Cargar un cobro**. |
+| **Te falta pagar** | Lo contratado en costos menos lo que ya pagaste: lo que todavía te queda por pagar de la obra. Abajo, el total contratado («de \$ 25.000.000 contratados»). Va en rojo si falta algo; si ya pagaste todo lo contratado (o más), queda en \$ 0. | **Lo que debés**: una fila por proveedor, con su rubro, y el botón **Cargar un pago**. |
 
 **Te queda de ganancia** aparece solo cuando la obra tiene historia para contar; si no, la portada tiene tres números.
 
@@ -62,6 +62,7 @@ En la captura del celular está Dúplex Sur: usó el 103 % de lo contratado y ga
 | **Pagado** | La plata que ya salió por esta obra. Incluye lo que habías pagado antes de cargarla en COTA. |
 | **Cobrado** | La plata que te pagó el cliente. Incluye lo que habías cobrado antes de COTA. |
 | **Debés** | Lo ya hecho o entregado que todavía no pagaste: lo gastado menos lo pagado. |
+| **Te falta pagar** | Lo contratado menos lo pagado: lo que todavía te queda por pagar de los costos de la obra. Nunca baja de \$ 0. |
 | **Te falta cobrar** | Lo pactado menos lo cobrado: lo que el cliente todavía te tiene que pagar. |
 | **Caja de la obra** | Lo cobrado menos lo pagado. **No es ganancia**: una parte ya la debés o la vas a tener que pagar. |
 | **Ganancia planeada** | Lo que queda de lo pactado después de los rubros: lo que pensabas ganar. Si actualizaste el contrato o un rubro, ya lo tiene en cuenta. |
@@ -384,7 +385,7 @@ Para corregir el monto de una carga (de hoy o de otro día) o para anularla, mir
 
 Si el administrador te dio **Solo los costos**, la obra te muestra solo lo que cuesta:
 
-- La portada tiene el anillo, una frase sobre los costos («Gastaste de más», «Vas dentro de lo contratado» o «Todavía no hay nada contratado.») y un solo número: **Debés**.
+- La portada tiene el anillo, una frase sobre los costos («Gastaste de más», «Vas dentro de lo contratado» o «Todavía no hay nada contratado.») y un solo número: **Te falta pagar** (lo contratado menos lo pagado).
 - No ves la historia, la caja, lo que falta cobrar ni la ganancia.
 - En **Lo que pasó** no aparecen los cobros ni las actualizaciones del contrato con el cliente, y no está el filtro **Cobros**. Tampoco ves quién corrigió una carga ni **Ver qué cambió**: es plata del cliente.
 - En **Lo que pasó**, los montos tienen signo pero no color: esta vista no habla de la ganancia.
